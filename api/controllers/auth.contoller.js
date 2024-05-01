@@ -4,6 +4,12 @@ import prisma from '../lib/prisma.js';
 export const register = async (req, res) => {
   const { username, email, password } = req.body;
 
+  if (password.length < 6 || !/^\D*\d+\D*$/.test(password))
+    res.status(405).json({
+      message:
+        'Password must include a number character at least and must be 6 characters length!',
+    });
+
   try {
     // hash the password before storing in database
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -23,9 +29,11 @@ export const register = async (req, res) => {
     res.status(500).json({ message: 'Failed to create user!' });
   }
 };
+
 export const login = async (req, res) => {
   console.log('login endpoint post requested');
 };
+
 export const logout = async (req, res) => {
   console.log('logout endpoint post requested');
 };

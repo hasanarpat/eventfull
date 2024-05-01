@@ -18,6 +18,5 @@ app.use('/api/auth', authRoute);
 app.use('/api/user', userRoute);
 app.use('/api/artist', artistRoute);
 app.use('/api/event', eventRoute);
-app.get('/api/test', () => console.log('test route'));
 
 app.listen(8800, () => console.log('Server is working on 8800 port!'));

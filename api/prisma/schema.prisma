@@ -13,5 +13,65 @@ model User{
   username String @unique
   password String
   avatar String?
+  savedEvents SavedEvents[]
   createdAt DateTime @default(now())
+}
+
+model Event{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  arena Arena @relation(fields: [arenaId],references: [id])
+  arenaId String @db.ObjectId
+  artist Artist @relation(fields: [artistId],references: [id])
+  artistId String @db.ObjectId
+  title String
+  desc String
+  images String[]
+  date DateTime
+  time String
+  price Int
+  category String[]
+  address String
+  city String
+  latitude String
+  longitude String
+  couponCount Int
+  savedEvents SavedEvents[]
+  createdAt DateTime @default(now())
+}
+
+model Arena{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  events Event[]
+  address String
+  city String
+  latitude String
+  longitude String
+  eventsOnShow String[]
+  title String
+  desc String
+  images String[]
+  seatCount Int
+  createdAt DateTime @default(now())
+}
+
+model Artist{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  events Event[]
+  title String
+  desc String
+  images String[]
+  category String[]
+  eventsOnShow String[]
+  createdAt DateTime @default(now())
+}
+
+model SavedEvents{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  event Event @relation(fields:[eventId],references: [id])
+  user User @relation(fields:[userId], references:[id])
+  eventId String @db.ObjectId @unique
+  userId String @db.ObjectId @unique
+  createdAt DateTime @default(now())
+
+  @@unique([eventId,userId])
 }

@@ -16,6 +16,7 @@ export const getArtist = async (req, res) => {
 };
 
 export const getArtists = async (req, res) => {
+  // TODO: add pagination and limitation for larger database possibility
   const query = req.query;
 
   try {
@@ -36,7 +37,7 @@ export const getArtists = async (req, res) => {
 };
 
 export const addArtist = async (req, res) => {
-  // modify adding authorization accessible only for admins
+  // TODO: modify adding authorization accessible only for admins
 
   const body = req.body;
 
@@ -54,7 +55,7 @@ export const addArtist = async (req, res) => {
 };
 
 export const updateArtist = async (req, res) => {
-  // modify updating authorization accessible only for admins
+  // TODO: modify updating authorization accessible only for admins
 
   const body = req.body;
   const id = req.params.id;
@@ -74,7 +75,7 @@ export const updateArtist = async (req, res) => {
 };
 
 export const deleteArtist = async (req, res) => {
-  // modify deleting authorization accessible only for admins
+  // TODO: modify deleting authorization accessible only for admins
 
   const id = req.params.id;
 

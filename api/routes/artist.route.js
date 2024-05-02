@@ -11,7 +11,7 @@ const artistRoute = express.Router();
 
 artistRoute.get('/artists', getArtists);
 artistRoute.get('/:id', getArtist);
-artistRoute.post('/:id', addArtist);
+artistRoute.post('/', addArtist);
 artistRoute.put('/:id', updateArtist);
 artistRoute.delete('/:id', deleteArtist);
 

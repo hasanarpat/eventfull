@@ -19,15 +19,37 @@ export const getUser = async (req, res) => {
 };
 
 export const getUsers = async (req, res) => {
-  const query = res.query;
+  const query = req.query;
+
   try {
-    const users = await prisma.user.findMany({
-      where: {
-        username: {
-          contains: query.username || undefined,
+    // if there is a query search for usernames those contains query value and abstract password value from user object via select
+    let users;
+    if (query && query.username) {
+      users = await prisma.user.findMany({
+        where: {
+          username: {
+            contains: query.username,
+          },
         },
-      },
-    });
+        select: {
+          id: true,
+          username: true,
+          email: true,
+          avatar: true,
+          createdAt: true,
+        },
+      });
+    } else {
+      users = await prisma.user.findMany({
+        select: {
+          id: true,
+          username: true,
+          email: true,
+          avatar: true,
+          createdAt: true,
+        },
+      });
+    }
 
     res.status(200).json(users);
   } catch (error) {
@@ -49,7 +71,7 @@ export const updateUser = async (req, res) => {
     });
 
     // separate password from user info for response
-    const { password, ...rest } = updateUser;
+    const { password, ...rest } = updatedUser;
 
     res.status(200).json(rest);
   } catch (error) {

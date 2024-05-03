@@ -20,14 +20,19 @@ export const getArtists = async (req, res) => {
   const query = req.query;
 
   try {
-    const artists = await prisma.artist.findMany({
-      where: {
-        category: {
-          has: query.category || undefined,
+    let artists;
+    if (query.category) {
+      artists = await prisma.artist.findMany({
+        where: {
+          category: {
+            has: query.category || undefined,
+          },
+          title: query.title || undefined,
         },
-        title: query.title || undefined,
-      },
-    });
+      });
+    } else {
+      artists = await prisma.artist.findMany();
+    }
 
     res.status(200).json(artists);
   } catch (error) {

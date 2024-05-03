@@ -5,32 +5,39 @@ export const getEvents = async (req, res) => {
   const query = req.query;
 
   try {
-    const events = await prisma.event.findMany({
-      where: {
-        title: {
-          contains: query.title || undefined,
+    let events;
+    if (Object.keys(query).length !== 0) {
+      // Eğer query varsa, belirtilen kriterlere uygun etkinlikleri döndür
+      events = await prisma.event.findMany({
+        where: {
+          title: {
+            contains: query.title || undefined,
+          },
+          arenaName: {
+            contains: query.arena || undefined,
+          },
+          artistName: {
+            contains: query.artist || undefined,
+          },
+          date: {
+            contains: query.date || undefined,
+          },
+          category: {
+            has: query.category || null,
+          },
+          city: {
+            contains: query.city || undefined,
+          },
+          price: {
+            gte: parseInt(query.minPrice) || 0,
+            lte: parseInt(query.maxPrice) || 100000,
+          },
         },
-        arena: {
-          contains: query.arena || undefined,
-        },
-        artist: {
-          contains: query.artist || undefined,
-        },
-        date: {
-          contains: query.date || undefined,
-        },
-        category: {
-          contains: query.category || undefined,
-        },
-        city: {
-          contains: query.city || undefined,
-        },
-        price: {
-          gte: parseInt(query.minPrice) || 0,
-          lte: parseInt(query.maxPrice) || 100000,
-        },
-      },
-    });
+      });
+    } else {
+      // Eğer query yoksa, tüm etkinlikleri döndür
+      events = await prisma.event.findMany();
+    }
 
     res.status(200).json(events);
   } catch (error) {

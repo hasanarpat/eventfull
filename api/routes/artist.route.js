@@ -9,7 +9,7 @@ import {
 
 const artistRoute = express.Router();
 
-artistRoute.get('/artists', getArtists);
+artistRoute.get('/', getArtists);
 artistRoute.get('/:id', getArtist);
 artistRoute.post('/', addArtist);
 artistRoute.put('/:id', updateArtist);

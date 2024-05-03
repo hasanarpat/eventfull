@@ -1,5 +1,7 @@
 import prisma from '../lib/prisma.js';
 
+// TODO: CONTROL IF USER IS ADMIN AND VERIFY ADMIN TOKEN -> DO NOT FORGET TO MODIFY TOKEN FOR IS_ADMIN
+
 export const getArtist = async (req, res) => {
   const id = req.params.id;
 

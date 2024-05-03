@@ -5,6 +5,7 @@ import authRoute from './routes/auth.route.js';
 import userRoute from './routes/user.route.js';
 import artistRoute from './routes/artist.route.js';
 import eventRoute from './routes/event.route.js';
+import arenaRoute from './routes/arena.route.js';
 
 const app = express();
 
@@ -18,5 +19,6 @@ app.use('/api/auth', authRoute);
 app.use('/api/user', userRoute);
 app.use('/api/artist', artistRoute);
 app.use('/api/event', eventRoute);
+app.use('/api/arena', arenaRoute);
 
 app.listen(8800, () => console.log('Server is working on 8800 port!'));

@@ -1,20 +1,22 @@
 import prisma from '../lib/prisma.js';
 import jwt from 'jsonwebtoken';
 
+// TODO: CONTROL IF USER IS ADMIN AND VERIFY ADMIN TOKEN -> DO NOT FORGET TO MODIFY TOKEN FOR IS_ADMIN
+
 export const getEvents = async (req, res) => {
   const query = req.query;
-
   try {
     let events;
     if (Object.keys(query).length !== 0) {
-      // Eğer query varsa, belirtilen kriterlere uygun etkinlikleri döndür
+      console.log('query lenght is not 0');
+
       events = await prisma.event.findMany({
         where: {
           title: {
             contains: query.title || undefined,
           },
           arenaName: {
-            contains: query.arena || undefined,
+            contains: query.arena || null,
           },
           artistName: {
             contains: query.artist || undefined,
@@ -35,7 +37,6 @@ export const getEvents = async (req, res) => {
         },
       });
     } else {
-      // Eğer query yoksa, tüm etkinlikleri döndür
       events = await prisma.event.findMany();
     }
 
@@ -51,7 +52,7 @@ export const getEvent = async (req, res) => {
   const token = req.cookies?.token;
 
   try {
-    const event = await prisma.event.findUnique({
+    const updatedEvent = await prisma.event.findUnique({
       where: { id },
       include: {
         artist: true,
@@ -69,12 +70,14 @@ export const getEvent = async (req, res) => {
               },
             },
           });
-          res.status(200).json({ ...event, isSaved: saved ? true : false });
+          res
+            .status(200)
+            .json({ ...updatedEvent, isSaved: saved ? true : false });
         }
       });
     }
 
-    res.status(200).json({ ...event, isSaved: false });
+    res.status(200).json({ ...updatedEvent, isSaved: false });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: 'Failed to get event info!' });
@@ -83,15 +86,14 @@ export const getEvent = async (req, res) => {
 
 export const addEvent = async (req, res) => {
   const body = req.body;
-  const tokenUserId = req.userId;
 
   try {
     const newEvent = await prisma.event.create({
       data: {
         ...body,
-        userId: tokenUserId,
       },
     });
+    // console.log(newEvent, 'newEvent');
 
     res.status(200).json(newEvent);
   } catch (error) {
@@ -147,6 +149,6 @@ export const deleteEvent = async (req, res) => {
     res.status(200).json({ message: 'Event succesfully deleted' });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: 'Failed to update event!' });
+    res.status(500).json({ message: 'Failed to delete event!' });
   }
 };

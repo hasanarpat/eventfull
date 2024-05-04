@@ -21,4 +21,4 @@ app.use('/api/artist', artistRoute);
 app.use('/api/event', eventRoute);
 app.use('/api/arena', arenaRoute);
 
-app.listen(8800, () => console.log('Server is working on 8800 port!'));
+app.listen(8800, () => console.log('Server is running and up on 8800 port!'));

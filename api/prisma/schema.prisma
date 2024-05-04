@@ -18,6 +18,7 @@ model User{
   events Event[]
   arenas Arena[]
   artists Artist[]
+  comments Comment[]
   createdAt DateTime @default(now())
 }
 
@@ -44,6 +45,7 @@ model Event{
   longitude String
   couponCount Int
   savedEvents SavedEvents[]
+  comments Comment[]
   createdAt DateTime @default(now())
 }
 
@@ -84,6 +86,19 @@ model SavedEvents{
   eventId String @db.ObjectId @unique
   userId String @db.ObjectId @unique
   createdAt DateTime @default(now())
+
+  @@unique([eventId,userId])
+}
+
+model Comment{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  event Event @relation(fields:[eventId],references: [id])
+  user User @relation(fields:[userId], references:[id])
+  eventId String @db.ObjectId @unique
+  userId String @db.ObjectId @unique
+  content String
+  createdAt DateTime @default(now())
+  likes Int
 
   @@unique([eventId,userId])
 }

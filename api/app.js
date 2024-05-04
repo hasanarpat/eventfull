@@ -6,6 +6,7 @@ import userRoute from './routes/user.route.js';
 import artistRoute from './routes/artist.route.js';
 import eventRoute from './routes/event.route.js';
 import arenaRoute from './routes/arena.route.js';
+import commentRoute from './routes/comment.route.js';
 
 const app = express();
 
@@ -20,5 +21,6 @@ app.use('/api/user', userRoute);
 app.use('/api/artist', artistRoute);
 app.use('/api/event', eventRoute);
 app.use('/api/arena', arenaRoute);
+app.use('/api/comment', commentRoute);
 
 app.listen(8800, () => console.log('Server is running and up on 8800 port!'));

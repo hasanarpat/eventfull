@@ -11,7 +11,7 @@ import { verifyToken } from '../middleware/verifyToken.js';
 const arenaRoute = express.Router();
 
 arenaRoute.get('/', getArenas);
-arenaRoute.post('/', addArena);
+arenaRoute.post('/', verifyToken, addArena);
 arenaRoute.get('/:id', getArena);
 arenaRoute.put('/:id', verifyToken, updateArena);
 arenaRoute.delete('/:id', verifyToken, deleteArena);

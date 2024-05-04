@@ -12,7 +12,7 @@ const artistRoute = express.Router();
 
 artistRoute.get('/', getArtists);
 artistRoute.get('/:id', getArtist);
-artistRoute.post('/', addArtist);
+artistRoute.post('/', verifyToken, addArtist);
 artistRoute.put('/:id', verifyToken, updateArtist);
 artistRoute.delete('/:id', verifyToken, deleteArtist);
 

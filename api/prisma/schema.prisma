@@ -16,6 +16,8 @@ model User{
   avatar String?
   savedEvents SavedEvents[]
   events Event[]
+  arenas Arena[]
+  artists Artist[]
   createdAt DateTime @default(now())
 }
 
@@ -58,6 +60,8 @@ model Arena{
   images String[]
   seatCount Int
   createdAt DateTime @default(now())
+  user User @relation(fields:[userId], references:[id])
+  userId String @db.ObjectId
 }
 
 model Artist{
@@ -69,6 +73,8 @@ model Artist{
   category String[]
   eventsOnShow String[]
   createdAt DateTime @default(now())
+  user User @relation(fields:[userId], references:[id])
+  userId String @db.ObjectId
 }
 
 model SavedEvents{

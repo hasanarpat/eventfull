@@ -6,13 +6,14 @@ import {
   getArtists,
   updateArtist,
 } from '../controllers/artist.contoller.js';
+import { verifyToken } from '../middleware/verifyToken.js';
 
 const artistRoute = express.Router();
 
 artistRoute.get('/', getArtists);
 artistRoute.get('/:id', getArtist);
 artistRoute.post('/', addArtist);
-artistRoute.put('/:id', updateArtist);
-artistRoute.delete('/:id', deleteArtist);
+artistRoute.put('/:id', verifyToken, updateArtist);
+artistRoute.delete('/:id', verifyToken, deleteArtist);
 
 export default artistRoute;

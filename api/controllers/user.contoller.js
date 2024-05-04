@@ -63,8 +63,16 @@ export const getUsers = async (req, res) => {
 export const updateUser = async (req, res) => {
   const id = req.params.id;
   const body = req.body;
+  const tokenUserId = req.userId;
 
   try {
+    const user = await prisma.user.findUnique({
+      where: { id },
+    });
+
+    if (user.id !== tokenUserId)
+      return res.status(403).json({ message: 'Forbidden! Not authorized!' });
+
     const updatedUser = await prisma.user.update({
       where: { id },
       data: {
@@ -84,11 +92,20 @@ export const updateUser = async (req, res) => {
 
 export const deleteUser = async (req, res) => {
   const id = req.params.id;
+  const tokenUserId = req.userId;
 
   try {
+    const user = await prisma.user.findUnique({
+      where: { id },
+    });
+
+    if (user.id !== tokenUserId)
+      return res.status(403).json({ message: 'Forbidden! Not authorized!' });
+
     await prisma.user.delete({
       where: { id },
     });
+
     res.status(200).json({ message: 'User succesfully deleted!' });
   } catch (error) {
     console.log(error);

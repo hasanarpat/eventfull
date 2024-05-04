@@ -1,8 +1,6 @@
 import prisma from '../lib/prisma.js';
 import jwt from 'jsonwebtoken';
 
-// TODO: CONTROL IF USER IS ADMIN AND VERIFY ADMIN TOKEN -> DO NOT FORGET TO MODIFY TOKEN FOR IS_ADMIN
-
 export const getEvents = async (req, res) => {
   const query = req.query;
   try {
@@ -93,7 +91,6 @@ export const addEvent = async (req, res) => {
         ...body,
       },
     });
-    // console.log(newEvent, 'newEvent');
 
     res.status(200).json(newEvent);
   } catch (error) {

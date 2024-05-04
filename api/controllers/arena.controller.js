@@ -1,7 +1,5 @@
 import prisma from '../lib/prisma.js';
 
-// TODO: CONTROL IF USER IS ADMIN AND VERIFY ADMIN TOKEN -> DO NOT FORGET TO MODIFY TOKEN FOR IS_ADMIN
-
 export const getArena = async (req, res) => {
   const id = req.params.id;
 
@@ -49,7 +47,16 @@ export const addArena = async (req, res) => {
 export const updateArena = async (req, res) => {
   const body = req.body;
   const id = req.params.id;
+  const tokenUserId = req.userId;
+
   try {
+    const arena = await prisma.arena.findUnique({
+      where: { id },
+    });
+
+    if (arena.userId !== tokenUserId)
+      return res.status(403).json({ message: 'Not authorized!' });
+
     const updatedArena = await prisma.arena.update({
       where: { id },
       data: {
@@ -66,8 +73,16 @@ export const updateArena = async (req, res) => {
 
 export const deleteArena = async (req, res) => {
   const id = req.params.id;
+  const tokenUserId = req.userId;
 
   try {
+    const arena = await prisma.arena.findUnique({
+      where: { id },
+    });
+
+    if (arena.userId !== tokenUserId)
+      return res.status(403).json({ message: 'Not authorized!' });
+
     await prisma.arena.delete({
       where: { id },
     });

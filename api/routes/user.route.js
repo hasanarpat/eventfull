@@ -1,16 +1,17 @@
 import express from 'express';
 import {
-  deleteUser,
   getUser,
   getUsers,
   updateUser,
+  deleteUser,
 } from '../controllers/user.contoller.js';
+import { verifyToken } from '../middleware/verifyToken.js';
 
 const userRoute = express.Router();
 
 userRoute.get('/', getUsers);
 userRoute.get('/:id', getUser);
-userRoute.put('/:id', updateUser);
-userRoute.delete('/:id', deleteUser);
+userRoute.put('/:id', verifyToken, updateUser);
+userRoute.delete('/:id', verifyToken, deleteUser);
 
 export default userRoute;

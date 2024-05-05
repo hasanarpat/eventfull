@@ -5,7 +5,7 @@ import {
   addComment,
   updateComment,
   deleteComment,
-  getAllComments,
+  // getAllComments,
 } from '../controllers/comment.controller.js';
 import { verifyToken } from '../middleware/verifyToken.js';
 

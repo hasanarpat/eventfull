@@ -1,4 +1,5 @@
 import prisma from '../lib/prisma.js';
+import bcrypt from 'bcrypt';
 
 // TODO: CONTROL IF USER IS ADMIN AND VERIFY ADMIN TOKEN -> DO NOT FORGET TO MODIFY TOKEN FOR IS_ADMIN
 
@@ -73,12 +74,26 @@ export const updateUser = async (req, res) => {
     if (user.id !== tokenUserId)
       return res.status(403).json({ message: 'Forbidden! Not authorized!' });
 
-    const updatedUser = await prisma.user.update({
-      where: { id },
-      data: {
-        ...body,
-      },
-    });
+    const { updatePassword, ...updateRest } = body;
+    let updatedUser;
+    if (updatePassword) {
+      const hashedPassword = await bcrypt.hash(updatePassword, 10);
+
+      updatedUser = await prisma.user.update({
+        where: { id },
+        data: {
+          ...updateRest,
+          password: hashedPassword,
+        },
+      });
+    } else {
+      updatedUser = await prisma.user.update({
+        where: { id },
+        data: {
+          ...updateRest,
+        },
+      });
+    }
 
     // separate password from user info for response
     const { password, ...rest } = updatedUser;

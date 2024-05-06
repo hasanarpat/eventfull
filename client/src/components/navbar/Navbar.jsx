@@ -1,6 +1,7 @@
 import styles from './navbar.module.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Switch from '../switch/Switch';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -64,15 +65,37 @@ const Navbar = () => {
           className={styles.hamburger}
           onClick={() => setOpenMenu((prev) => !prev)}
         >
-          <div className={styles.hamburgerStick} />
-          <div className={styles.hamburgerStick} />
-          <div className={styles.hamburgerStick} />
+          <div className={styles.hamburgerStick} id={openMenu && 'stick1'} />
+          <div className={styles.hamburgerStick} id={openMenu && 'stick2'} />
+          <div className={styles.hamburgerStick} id={openMenu && 'stick3'} />
         </div>
         <div
           className={styles.mobileMenu}
           style={openMenu ? { display: 'block' } : { display: 'none' }}
         >
-          merhaba
+          <ul>
+            <li>
+              <Link to='/'>Home</Link>
+            </li>
+            <li>
+              <Link to='/event'>Events</Link>
+            </li>
+            <li>
+              <Link to='/artist'>Artists</Link>
+            </li>
+            <li>
+              <Link to='/arena'>Arenas</Link>
+            </li>
+            <li>
+              <Link to='/search'>Search</Link>
+            </li>
+            <li>
+              <Link to='/profile'>Profile 👤</Link>
+            </li>
+            <li>
+              <Switch />
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

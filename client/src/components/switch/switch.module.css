@@ -1,0 +1,29 @@
+.switch {
+  background-color: var(--background-secondary-color);
+  border-radius: 20px;
+  height: 48px;
+  position: relative;
+  cursor: pointer;
+
+  .icons {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-size: 22px;
+      user-select: none;
+    }
+  }
+
+  .ball {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 48px;
+    background-color: var(--accent-color);
+    top: 10px;
+    z-index: 99999;
+  }
+}

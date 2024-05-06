@@ -1,3 +1,30 @@
 .home {
-  background-color: red;
+  .sample {
+    padding: 32px;
+    background-color: var(--background-dark-color);
+    border-radius: 32px;
+
+    .sampleInner {
+      padding: 24px;
+      background-color: var(--background-secondary-color);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        background-color: var(--primary-color);
+        padding: 12px;
+        border-radius: 12px;
+        border: 5px solid var(--accent-color);
+        color: black;
+      }
+
+      span {
+        background-color: var(--accent-color);
+        color: black;
+        padding: 10px;
+      }
+    }
+  }
 }

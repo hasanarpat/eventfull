@@ -1,10 +1,14 @@
 import styles from './navbar.module.css';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Switch from '../switch/Switch';
+import { AuthContext } from '../../context/AuthContext';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+
+  let { currentUser } = useContext(AuthContext);
+  currentUser = true;
 
   return (
     <nav className={styles.navbar}>
@@ -19,18 +23,23 @@ const Navbar = () => {
           <div className={styles.list}>
             <ul>
               <li>
-                <Link to='/event'>Events</Link>
+                <Link to='/events'>Events</Link>
               </li>
               <li>
-                <Link to='/artist'>Artists</Link>
+                <Link to='/artists'>Artists</Link>
               </li>
               <li>
                 <Link to='/search'>Search</Link>
               </li>
+              {currentUser && (
+                <li>
+                  <Link to='/profile'>Profile 👤</Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
-
+        {/* 
         <div className={styles.right}>
           <ul>
             <li>
@@ -59,7 +68,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div
           className={styles.hamburger}
@@ -89,9 +98,11 @@ const Navbar = () => {
             <li>
               <Link to='/search'>Search</Link>
             </li>
-            <li>
-              <Link to='/profile'>Profile 👤</Link>
-            </li>
+            {currentUser && (
+              <li>
+                <Link to='/profile'>Profile 👤</Link>
+              </li>
+            )}
             <li>
               <Switch />
             </li>

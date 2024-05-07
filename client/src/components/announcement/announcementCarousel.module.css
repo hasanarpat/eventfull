@@ -1,0 +1,43 @@
+.announcementCarousel {
+  padding: 20px;
+  width: 100%;
+  .container {
+    width: 100%;
+    aspect-ratio: 16/5;
+    position: relative;
+    overflow-x: hidden;
+
+    .wrapper {
+      /* n item * 100 */
+      width: 400%;
+      height: 100%;
+      position: absolute;
+      transform: translateX(0);
+
+      display: flex;
+      background-color: yellow;
+
+      .carouselItem {
+        flex: 1;
+        height: 100%;
+      }
+
+      transition: all 1s ease-in-out;
+    }
+
+    .arrowLeft,
+    .arrowRight {
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .arrowLeft {
+      left: 0%;
+    }
+    .arrowRight {
+      left: calc(100% - 2rem);
+    }
+  }
+}

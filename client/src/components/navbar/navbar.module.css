@@ -80,7 +80,7 @@
       width: 100%;
       height: 100vh;
       z-index: 9999;
-      background-color: var(--background-dark-color);
+      background-color: var(--background-primary-color);
 
       ul {
         width: 100%;
@@ -95,6 +95,7 @@
 
         li {
           padding: 10px 22px;
+          color: var(--accent-color);
           a {
             font-size: 30px;
             line-height: 1.1;

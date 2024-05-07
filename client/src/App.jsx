@@ -15,6 +15,7 @@ import Artists from './routes/artists/Artists';
 import Arenas from './routes/arenas/Arenas';
 import Events from './routes/events/Events';
 import Users from './routes/users/Users';
+import EditPost from './routes/editPost/EditPost';
 
 function App() {
   const router = createBrowserRouter([
@@ -87,6 +88,10 @@ function App() {
         {
           path: '/event/add',
           element: <NewPost />,
+        },
+        {
+          path: '/event/edit/:id',
+          element: <EditPost />,
         },
       ],
     },

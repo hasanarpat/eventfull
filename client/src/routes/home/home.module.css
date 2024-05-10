@@ -9,7 +9,6 @@
         height: max-content;
         background-image: url('https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-size: cover;
-
         position: relative;
         z-index: 1;
 
@@ -85,6 +84,7 @@
                 padding: 10px 22px;
                 font-size: 18px;
                 font-weight: 600;
+                width: fit-content;
 
                 &:hover {
                   background-color: var(--background-primary-color);
@@ -99,6 +99,48 @@
                     background-color: var(--accent-color);
                   }
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    .container {
+      .wrapper {
+        .hero {
+          .texts {
+            .top {
+              h1 {
+                font-size: 80px;
+              }
+              h3 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    .container {
+      .wrapper {
+        .hero {
+          .texts {
+            .top {
+              h1 {
+                font-size: 64px;
+              }
+              h3 {
+                font-size: 18px;
               }
             }
           }

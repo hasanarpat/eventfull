@@ -18,7 +18,7 @@ const AnnouncementCarousel = () => {
 
   const handleClick = (direction) => {
     if (direction === 'left') {
-      setSlideIndex((prev) => (prev <= 0 ? 0 : prev - 1));
+      setSlideIndex((prev) => (prev <= 0 ? 3 : prev - 1));
     } else if (direction === 'right') {
       setSlideIndex((prev) => (prev >= 3 ? 0 : prev + 1));
     }

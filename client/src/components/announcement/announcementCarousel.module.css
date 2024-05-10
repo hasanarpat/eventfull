@@ -1,6 +1,7 @@
 .announcementCarousel {
   padding: 20px;
   width: 100%;
+
   .container {
     width: 100%;
     aspect-ratio: 16/5;
@@ -40,11 +41,9 @@
           align-items: center;
           justify-content: center;
 
-          font-family: 'Bebas Neue', sans-serif;
-
           h2 {
             color: var(--primary-color);
-            font-size: 64px;
+            font-size: 80px;
             font-weight: 700;
             letter-spacing: 1.2;
             margin: 0;
@@ -58,7 +57,7 @@
             font-size: 18px;
             line-height: 1.1;
             font-weight: 500;
-            text-align: justify;
+            text-align: center;
             color: white;
           }
 
@@ -87,12 +86,15 @@
     .arrowLeft,
     .arrowRight {
       position: absolute;
-      top: 50%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
       z-index: 10;
       font-size: 48px;
       cursor: pointer;
       color: var(--primary-color);
       transition: all 0.3s ease-in-out;
+      height: max-content;
 
       &:hover {
         transform: scale(1.1);
@@ -108,7 +110,53 @@
       }
     }
     .arrowRight {
-      left: 92%;
+      left: calc(100% - 48px);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .announcementCarousel {
+    .container {
+      .arrowLeft,
+      .arrowRight {
+        font-size: 32px;
+      }
+
+      .arrowRight {
+        left: calc(100% - 32px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .announcementCarousel {
+    .container {
+      .wrapper {
+        .carouselItem {
+          .announcement {
+            h2 {
+              font-size: 32px;
+            }
+            p {
+              font-size: 16px;
+            }
+            button {
+              font-size: 14px;
+              padding: 8px 16px;
+            }
+          }
+        }
+      }
+      .arrowLeft,
+      .arrowRight {
+        font-size: 24px;
+      }
+
+      .arrowRight {
+        left: calc(100% - 24px);
+      }
     }
   }
 }

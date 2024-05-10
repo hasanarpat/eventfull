@@ -8,8 +8,6 @@ const AnnouncementCarousel = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log(slideIndex, 'slideIndex');
-
       carouselRef.current.style.transform = `translateX(${-slideIndex * 25}%)`;
     }, 1000);
 

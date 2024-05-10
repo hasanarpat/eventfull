@@ -40,12 +40,10 @@ const Footer = () => {
                 <li>Cookies</li>
               </ul>
             </div>
-            <div>
-              <Link to='/'>
-                <img src='/assets/logo-dark.jpg' alt='' />
-              </Link>
-            </div>
           </div>
+          <Link to='/'>
+            <img src='/assets/logo-dark.jpg' alt='' />
+          </Link>
           <span>
             All rights are reserved. 2024{' '}
             <b>Eventfull Entertainment and Software Inc</b>. ©

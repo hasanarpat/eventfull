@@ -1,5 +1,6 @@
 .home {
   padding-top: 80px;
+  padding-bottom: 20px;
 
   .container {
     .wrapper {
@@ -104,10 +105,87 @@
           }
         }
       }
+      .rising {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding-inline: 20px;
+
+        .risingItem {
+          width: 100%;
+          aspect-ratio: 16/9;
+          background-size: cover;
+          /* background-blend-mode: saturation; */
+
+          .hoverInfo {
+            display: none;
+          }
+
+          &:hover {
+            .hoverInfo {
+              transition: all 1s ease-in-out;
+              display: flex;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+              background-color: rgba(0, 0, 0, 0.5);
+
+              .hoverInfoTitle {
+                font-size: 2rem;
+              }
+
+              .hoverInfoDetails {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                padding-inline: 1rem;
+                p {
+                  text-align: start;
+                  font-size: 18px;
+                  line-height: 1.1;
+                }
+                .detailInfoDate {
+                  width: fit-content;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: start;
+                  font-size: 18px;
+
+                  span {
+                    &:first-child {
+                      line-height: 1;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .search {
+        width: 70%;
+        margin: auto;
+      }
     }
   }
 }
 
+@media screen and (max-width: 1566px) {
+  .home {
+    .container {
+      .wrapper {
+        .search {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   .home {
     .container {
@@ -144,6 +222,10 @@
               }
             }
           }
+        }
+
+        .search {
+          width: 90%;
         }
       }
     }

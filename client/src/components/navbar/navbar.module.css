@@ -41,7 +41,7 @@
             background-color: var(--background-primary-color);
             border: 1px solid var(--background-primary-color);
             border-radius: 4px;
-            padding: 8px 16px;
+            padding: 12px 24px;
             transition: all 0.6s ease;
 
             a {
@@ -53,6 +53,15 @@
               background-color: var(--accent-color);
               color: white;
               border: 1px solid var(--text-color);
+            }
+
+            &:last-child {
+              padding: 8px 18px;
+              justify-content: center;
+              svg {
+                width: 24px;
+                height: 24px;
+              }
             }
           }
         }
@@ -101,6 +110,14 @@
             font-size: 30px;
             line-height: 1.1;
             font-weight: 900;
+          }
+        }
+        &:last-child {
+          padding: 8px 18px;
+          justify-content: center;
+          svg {
+            width: 24px;
+            height: 24px;
           }
         }
       }

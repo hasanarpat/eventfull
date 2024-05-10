@@ -20,8 +20,9 @@
         display: flex;
         flex-wrap: wrap;
         align-items: start;
-        justify-content: center;
+        justify-content: space-around;
         gap: 20px;
+        padding-top: 12px;
 
         div {
           min-width: 20%;

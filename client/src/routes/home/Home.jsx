@@ -1,4 +1,5 @@
 import AnnouncementCarousel from '../../components/announcement/AnnouncementCarousel';
+import Banner from '../../components/banner/Banner';
 import styles from './home.module.css';
 import { Link } from 'react-router-dom';
 
@@ -31,6 +32,9 @@ const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className={styles.banner}>
+            <Banner />
           </div>
           <div className={styles.announcement}>
             <AnnouncementCarousel />

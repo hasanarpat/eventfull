@@ -110,7 +110,7 @@
       }
     }
     .arrowRight {
-      left: calc(100% - 48px);
+      left: calc(98% - 48px);
     }
   }
 }
@@ -124,7 +124,7 @@
       }
 
       .arrowRight {
-        left: calc(100% - 32px);
+        left: calc(98% - 32px);
       }
     }
   }
@@ -155,7 +155,7 @@
       }
 
       .arrowRight {
-        left: calc(100% - 24px);
+        left: calc(98% - 24px);
       }
     }
   }

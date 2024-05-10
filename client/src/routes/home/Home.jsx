@@ -34,7 +34,18 @@ const Home = () => {
             </div>
           </div>
           <div className={styles.banner}>
-            <Banner />
+            <Banner
+              img='https://images.unsplash.com/photo-1586972246803-d2bdc4006378?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+              title='Disco Party On May Has Come'
+              date='May 18, Istanbul - Galata'
+            />
+          </div>
+          <div className={styles.banner}>
+            <Banner
+              img='https://images.unsplash.com/photo-1483821838526-8d9756a6e1ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D'
+              title='Let The Music Play'
+              date='May 22, Ankara - Cankaya'
+            />
           </div>
           <div className={styles.announcement}>
             <AnnouncementCarousel />

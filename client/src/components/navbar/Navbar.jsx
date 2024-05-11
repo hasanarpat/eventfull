@@ -86,9 +86,18 @@ const Navbar = () => {
           className={styles.hamburger}
           onClick={() => setOpenMenu((prev) => !prev)}
         >
-          <div className={styles.hamburgerStick} id={openMenu && 'stick1'} />
-          <div className={styles.hamburgerStick} id={openMenu && 'stick2'} />
-          <div className={styles.hamburgerStick} id={openMenu && 'stick3'} />
+          <div
+            className={styles.hamburgerStick}
+            id={openMenu ? 'stick1' : 'stick'}
+          />
+          <div
+            className={styles.hamburgerStick}
+            id={openMenu ? 'stick2' : 'stick'}
+          />
+          <div
+            className={styles.hamburgerStick}
+            id={openMenu ? 'stick3' : 'stick'}
+          />
         </div>
         <div
           className={styles.mobileMenu}

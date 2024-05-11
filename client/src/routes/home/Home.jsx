@@ -51,6 +51,13 @@ const Home = () => {
           <div className={styles.announcement}>
             <AnnouncementCarousel />
           </div>
+          <div className={styles.search}>
+            <Search />
+            {/* <Search type='artist' />
+            <Search type='arena' />
+            <Search type='event' />
+            <Search type='user' /> */}
+          </div>
           <section className={styles.rising}>
             <Link
               to='/events/blabla'
@@ -125,13 +132,6 @@ const Home = () => {
               </div>
             </Link>
           </section>
-          <div className={styles.search}>
-            <Search />
-            <Search type='artist' />
-            <Search type='arena' />
-            <Search type='event' />
-            <Search type='user' />
-          </div>
         </div>
       </div>
     </section>

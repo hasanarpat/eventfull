@@ -120,6 +120,7 @@
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 24px;
         padding-inline: 20px;
+        margin-top: 20px;
 
         .risingItem {
           width: 100%;
@@ -192,6 +193,7 @@
       .search {
         width: 70%;
         margin: auto;
+        margin-top: 1rem;
       }
     }
   }

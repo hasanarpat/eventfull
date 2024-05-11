@@ -125,6 +125,7 @@
           width: 100%;
           aspect-ratio: 16/9;
           background-size: cover;
+          border-radius: 4px;
           /* background-blend-mode: saturation; */
 
           .hoverInfo {
@@ -133,6 +134,8 @@
 
           &:hover {
             .hoverInfo {
+              border-radius: 4px;
+              box-shadow: inset 1px 1px 32px 5px #c8ff00;
               transition: all 1s ease-in-out;
               display: flex;
               height: 100%;

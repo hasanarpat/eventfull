@@ -5,8 +5,11 @@
 
 import { Link } from 'react-router-dom';
 import styles from './searchDefaultBar.module.css';
+import { useState } from 'react';
 
 const SearchDefaultBar = ({ showSuggestions, setShowSuggestions }) => {
+  const [inputValue, setInputValue] = useState('');
+
   const handleSearch = async (e) => {
     e.preventDefault();
   };
@@ -19,6 +22,7 @@ const SearchDefaultBar = ({ showSuggestions, setShowSuggestions }) => {
           placeholder='Search for Artists, Events, etc.'
           name='input'
           id='input'
+          onChange={(e) => setInputValue(e.target.value)}
         />
         <button style={{ visibility: 'hidden', width: '0px', height: '0px' }}>
           Search
@@ -66,7 +70,7 @@ const SearchDefaultBar = ({ showSuggestions, setShowSuggestions }) => {
               <span>May 15 2024</span>
             </Link>
             <div className={styles.seeMore}>
-              <Link to={`/blabla`}>See More</Link>
+              <Link to={`/search?key=${inputValue}`}>See More</Link>
             </div>
           </div>
         </div>{' '}

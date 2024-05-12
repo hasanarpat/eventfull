@@ -136,7 +136,7 @@
           &:hover {
             .hoverInfo {
               border-radius: 4px;
-              box-shadow: inset 1px 1px 32px 5px #c8ff00;
+              box-shadow: inset 1px 1px 12px 2px #e5ff00;
               transition: all 1s ease-in-out;
               display: flex;
               height: 100%;
@@ -198,6 +198,25 @@
     }
   }
 }
+@media screen and (min-width: 1566px) {
+  .home {
+    .container {
+      .wrapper {
+        .rising {
+          .risingItem {
+            &:hover {
+              .hoverInfo {
+                .hoverInfoDetails {
+                  padding-inline: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1566px) {
   .home {
@@ -205,6 +224,19 @@
       .wrapper {
         .search {
           width: 90%;
+        }
+
+        .rising {
+          .risingItem {
+            &:hover {
+              .hoverInfo {
+                .hoverInfoDetails {
+                  padding-inline: 2rem;
+                  background-color: red;
+                }
+              }
+            }
+          }
         }
       }
     }

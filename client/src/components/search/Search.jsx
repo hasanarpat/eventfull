@@ -37,7 +37,10 @@ const Search = ({ type }) => {
 
     default:
       searchComponentToReturn = (
-        <SearchDefaultBar showSuggestions={showSuggestions} />
+        <SearchDefaultBar
+          showSuggestions={showSuggestions}
+          setShowSuggestions={setShowSuggestions}
+        />
       );
       break;
   }
@@ -46,7 +49,7 @@ const Search = ({ type }) => {
     <div
       className={styles.searchBar}
       onFocus={() => setShowSuggestions(true)}
-      onBlur={() => setShowSuggestions(false)}
+      // onBlur={() => setShowSuggestions(false)}
     >
       <div className={styles.searchBarLayout}>{searchComponentToReturn}</div>
     </div>

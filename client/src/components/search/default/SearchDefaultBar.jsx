@@ -6,7 +6,7 @@
 import { Link } from 'react-router-dom';
 import styles from './searchDefaultBar.module.css';
 
-const SearchDefaultBar = ({ showSuggestions }) => {
+const SearchDefaultBar = ({ showSuggestions, setShowSuggestions }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
   };
@@ -26,6 +26,7 @@ const SearchDefaultBar = ({ showSuggestions }) => {
       </form>
       <article
         className={styles.suggestions}
+        onMouseLeave={() => setShowSuggestions(false)}
         style={showSuggestions ? { display: 'block' } : { display: 'none' }}
       >
         <div className={styles.suggestion}>

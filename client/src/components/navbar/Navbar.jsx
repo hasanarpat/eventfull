@@ -29,6 +29,9 @@ const Navbar = () => {
                 <Link to='/artists'>Artists</Link>
               </li>
               <li>
+                <Link to='/arenas'>Arenas</Link>
+              </li>
+              <li>
                 <Link to='/search'>Search</Link>
               </li>
               {currentUser && (

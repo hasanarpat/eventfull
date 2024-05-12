@@ -16,22 +16,34 @@ const Search = ({ type }) => {
   switch (type) {
     case 'artist':
       searchComponentToReturn = (
-        <SearchArtistBar showSuggestions={showSuggestions} />
+        <SearchArtistBar
+          showSuggestions={showSuggestions}
+          setShowSuggestions={setShowSuggestions}
+        />
       );
       break;
     case 'arena':
       searchComponentToReturn = (
-        <SearchArenaBar showSuggestions={showSuggestions} />
+        <SearchArenaBar
+          showSuggestions={showSuggestions}
+          setShowSuggestions={setShowSuggestions}
+        />
       );
       break;
     case 'event':
       searchComponentToReturn = (
-        <SearchEventBar showSuggestions={showSuggestions} />
+        <SearchEventBar
+          showSuggestions={showSuggestions}
+          setShowSuggestions={setShowSuggestions}
+        />
       );
       break;
     case 'user':
       searchComponentToReturn = (
-        <SearchUserBar showSuggestions={showSuggestions} />
+        <SearchUserBar
+          showSuggestions={showSuggestions}
+          setShowSuggestions={setShowSuggestions}
+        />
       );
       break;
 

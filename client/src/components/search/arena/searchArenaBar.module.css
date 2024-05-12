@@ -1,2 +1,60 @@
 .searchArenaBar {
+  .suggestions {
+    border-top: none;
+    max-height: 420px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+
+    .suggestion {
+      h4 {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--text-secondary-color);
+        margin-top: 0.5rem;
+      }
+
+      &:first-child {
+        h4 {
+          margin-top: 0rem;
+        }
+      }
+      .suggestionItems {
+        border-top: none;
+
+        .suggestionItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: none;
+          padding: none;
+
+          .suggestionItemReference {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            img {
+              width: 36px;
+              height: 36px;
+              border-radius: 36px;
+              object-fit: cover;
+            }
+            h5 {
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+          span {
+          }
+        }
+        .seeMore {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-top: none;
+          color: var(--text-secondary-color);
+        }
+      }
+    }
+  }
 }

@@ -1,13 +1,73 @@
 .arenas {
   .arenasContainer {
     .arenasWrapper {
+      .searchBar {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
       .topContent {
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding: 1rem;
       }
 
-      .searchBar {
+      .bottomContent {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-top: 1px solid #e3e3e3;
+
+        p {
+          font-size: 24px;
+          font-weight: 600;
+          color: var(--text-color);
+          margin: 1rem 0;
+        }
+
+        .visitedArenas {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          grid-gap: 1rem;
+
+          .visitedArenasItem {
+            background-color: var(--background-dark-color);
+            color: var(--text-secondary-color);
+            padding: 1rem;
+            transition: all 1s ease;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            h4 {
+              color: var(--primary-color);
+              font-size: 18px;
+            }
+
+            p {
+              color: var(--text-secondary-color);
+            }
+
+            .info {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              font-size: 18px;
+              gap: 1rem;
+
+              span {
+                &:first-child {
+                  svg {
+                    color: var(--primary-color);
+                    fill: var(--primary-color);
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

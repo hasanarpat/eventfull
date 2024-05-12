@@ -149,14 +149,14 @@
 
               .hoverInfoTitle {
                 font-size: 2rem;
-                text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #00ff33,
-                  0 0 10px #00ff33, 0 0 15px #00ff33;
+                text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #e5ff00b7,
+                  0 0 10px #e5ff00b7, 0 0 15px #e5ff00b7;
                 transition: all 1s;
 
                 &:hover {
-                  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #00ff33,
-                    0 0 10px #00ff33, 0 0 15px #00ff33, 0 0 20px #00ff33,
-                    0 0 25px #00ff33, 0 0 30px #00ff33;
+                  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 8px #e5ff00b7,
+                    0 0 10px #e5ff00b7, 0 0 15px #e5ff00b7, 0 0 20px #e5ff00b7,
+                    0 0 25px #e5ff00b7, 0 0 30px #e5ff00b7;
                 }
               }
 
@@ -232,7 +232,6 @@
               .hoverInfo {
                 .hoverInfoDetails {
                   padding-inline: 2rem;
-                  background-color: red;
                 }
               }
             }

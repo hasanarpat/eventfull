@@ -89,7 +89,7 @@
                 transition: all 0.2s ease-in;
                 border: none;
                 border-radius: 8px;
-                color: white;
+                color: black;
                 background-color: var(--primary-color);
                 cursor: pointer;
                 padding: 10px 22px;
@@ -103,11 +103,11 @@
                 }
 
                 &:last-child {
-                  background-color: var(--background-dark-color);
                   color: white;
+                  background-color: var(--accent-color);
 
                   &:hover {
-                    background-color: var(--accent-color);
+                    background-color: var(--background-dark-color);
                   }
                 }
               }
@@ -202,6 +202,19 @@
   .home {
     .container {
       .wrapper {
+        .hero {
+          .texts {
+            .bottom {
+              .buttons {
+                gap: 60px;
+                button {
+                  transform: scale(1.25);
+                }
+              }
+            }
+          }
+        }
+
         .rising {
           .risingItem {
             &:hover {

@@ -53,10 +53,10 @@ const Home = () => {
           </div>
           <div className={styles.search}>
             <Search />
-            {/* <Search type='artist' />
-            <Search type='arena' />
-            <Search type='event' />
-            <Search type='user' /> */}
+            {/* <Search type='artist' /> */}
+            {/* <Search type='arena' /> */}
+            {/* <Search type='event' /> */}
+            {/* <Search type='user' /> */}
           </div>
           <section className={styles.rising}>
             <Link

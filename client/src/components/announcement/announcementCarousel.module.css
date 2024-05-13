@@ -90,15 +90,21 @@
       bottom: 0;
       margin: auto;
       z-index: 10;
-      font-size: 48px;
       cursor: pointer;
       color: var(--primary-color);
       transition: all 0.3s ease-in-out;
-      height: max-content;
+      height: 48px;
+      width: 48px;
 
       &:hover {
         transform: scale(1.1);
         box-shadow: inset;
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+        margin: 0;
       }
     }
     .arrowLeft {
@@ -120,7 +126,8 @@
     .container {
       .arrowLeft,
       .arrowRight {
-        font-size: 32px;
+        height: 32px;
+        width: 32px;
       }
 
       .arrowRight {
@@ -151,7 +158,8 @@
       }
       .arrowLeft,
       .arrowRight {
-        font-size: 24px;
+        height: 24px;
+        width: 24px;
       }
 
       .arrowRight {

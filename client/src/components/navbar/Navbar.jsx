@@ -111,13 +111,13 @@ const Navbar = () => {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/event'>Events</Link>
+              <Link to='/events'>Events</Link>
             </li>
             <li>
-              <Link to='/artist'>Artists</Link>
+              <Link to='/artists'>Artists</Link>
             </li>
             <li>
-              <Link to='/arena'>Arenas</Link>
+              <Link to='/arenas'>Arenas</Link>
             </li>
             <li>
               <Link to='/search'>Search</Link>

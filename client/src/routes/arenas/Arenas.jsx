@@ -2,6 +2,7 @@ import Search from '../../components/search/Search';
 import styles from './arenas.module.css';
 import Tickets from '../../components/tickets/Tickets';
 import { Link } from 'react-router-dom';
+import Pagination from '../../components/pagination/Pagination';
 
 const Arenas = () => {
   return (
@@ -1070,6 +1071,9 @@ const Arenas = () => {
                   </div>
                 </div>
               </Link>
+            </div>
+            <div className={styles.pagination}>
+              <Pagination />
             </div>
           </section>
         </div>

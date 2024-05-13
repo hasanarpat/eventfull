@@ -1,2 +1,13 @@
 .artists {
+  .container {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 }

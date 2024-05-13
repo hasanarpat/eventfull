@@ -851,6 +851,227 @@ const Arenas = () => {
               </Link>
             </div>
           </div>
+          <section className={styles.allArenas}>
+            <p>All Arenas</p>
+            <div className={styles.allArenasList}>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+              <Link to={`/blabla`} className={styles.allArenasListItem}>
+                <img
+                  src='https://images.unsplash.com/photo-1542732351-fa2c82b0c746?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  alt='arena rock'
+                />
+                <div className={styles.allArenasListItemTexts}>
+                  <h4>Arena Rock</h4>
+                  <p>
+                    Consequat laboris est occaecat ipsum nulla enim esse ad
+                    magna labore exercitation qui Lorem deserunt. Reprehenderit
+                    nisi.
+                  </p>
+                  <div className={styles.allArenasListItemInfo}>
+                    <span>Tel: (12345678901)</span>
+                    <span>23 St. Revenue Avenue Istanbul</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </section>
         </div>
       </div>
     </section>

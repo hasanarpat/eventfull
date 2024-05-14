@@ -1,2 +1,21 @@
 .users {
+  .container {
+    .wrapper {
+      min-height: calc(100svh - 5rem);
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      background-color: blue;
+
+      .top {
+        flex: 1;
+        background-color: red;
+      }
+
+      .bottom {
+        flex: 3;
+        background-color: #fff;
+      }
+    }
+  }
 }

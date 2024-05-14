@@ -1,2 +1,37 @@
 .filter {
+  div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    * {
+      height: 2.5rem;
+      padding-inline: 0.25rem;
+      outline: none;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 20px;
+
+      div {
+        select {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      article {
+        label {
+          position: absolute;
+          top: 0;
+          height: max-content;
+          color: var(--accent-color);
+        }
+      }
+    }
+  }
 }

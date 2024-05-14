@@ -65,11 +65,11 @@ const Search = ({ type }) => {
       // onBlur={() => setShowSuggestions(false)}
     >
       <div className={styles.searchBarLayout}>
-        {type != 'user' && (
+        {/* {type != 'user' && (
           <div className={styles.filter}>
             <Filter type={type} />
           </div>
-        )}
+        )} */}
         {searchComponentToReturn}
       </div>
     </div>

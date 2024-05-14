@@ -12,6 +12,7 @@ const Events = () => {
           <Search type='artist' />
           <Tickets />
           <Popular />
+          {/* Instead of datagrid use infinite scroll technique here */}
           <Datagrid />
         </div>
       </div>

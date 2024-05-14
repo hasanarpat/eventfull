@@ -1,6 +1,7 @@
 import styles from './searchArtistBar.module.css';
+import Suggestions from '../../suggestions/Suggestions';
 
-const SearchArtistBar = () => {
+const SearchArtistBar = ({ showSuggestions, setShowSuggestions }) => {
   const handleSearch = async (e) => {
     e.preventDefault();
   };
@@ -18,7 +19,10 @@ const SearchArtistBar = () => {
           Search
         </button>
       </form>
-      <div className={styles.suggestions}>asdad</div>
+      <Suggestions
+        showSuggestions={showSuggestions}
+        setShowSuggestions={setShowSuggestions}
+      />
     </section>
   );
 };

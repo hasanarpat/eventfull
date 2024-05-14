@@ -5,16 +5,167 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
-      background-color: blue;
 
       .top {
         flex: 1;
-        background-color: red;
+        display: grid;
+        place-items: center;
+        .search {
+          width: 90%;
+          margin: auto;
+          height: 96px;
+          display: grid;
+          place-items: center;
+          form {
+            height: 4rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            input {
+              height: 100%;
+              width: 100%;
+              border-radius: 12px;
+              padding-left: 1rem;
+              font-size: 18px;
+              font-weight: 500;
+              border-color: var(--helper-color);
+              box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+                0 0 8px rgba(23, 181, 229, 0.6);
+              outline: 0 none;
+              min-width: 320px;
+            }
+            button {
+              min-width: 6rem;
+              height: 100%;
+              border-color: var(--helper-color);
+              box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+                0 0 8px rgba(23, 181, 229, 0.6);
+              border-radius: 12px;
+              font-size: 32px;
+            }
+          }
+        }
       }
 
       .bottom {
-        flex: 3;
-        background-color: #fff;
+        flex: 5;
+        display: grid;
+        place-items: center;
+        overflow-y: scroll;
+        max-height: 60svh;
+        padding: 0rem 5rem;
+
+        .userList {
+          width: 100%;
+          max-width: 1024px;
+          list-style: none;
+          transition: all 1s ease-in;
+
+          li {
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 4px;
+            background-color: var(--background-secondary-color);
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .userInfo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 48px;
+                  object-fit: cover;
+                }
+
+                h6 {
+                  font-size: 18px;
+                  font-weight: 600;
+                }
+              }
+
+              .buttons {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                a {
+                  background-color: var(--background-primary-color);
+                  &:hover {
+                    background-color: var(--primary-color);
+                    color: black;
+                  }
+                }
+                button,
+                a {
+                  font-size: 18px;
+                  font-weight: 500;
+                  cursor: pointer;
+                  border: none;
+                  padding: 12px 24px;
+                  border-radius: 12px;
+
+                  &:last-child {
+                    background-color: var(--accent-color);
+
+                    &:hover {
+                      background-color: var(--helper-color);
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .users {
+    .container {
+      .wrapper {
+        .top {
+          .search {
+            form {
+              flex-wrap: wrap;
+              height: max-content;
+              gap: 10px;
+
+              input {
+                height: 4rem;
+              }
+
+              button {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .bottom {
+          padding: 0rem 2rem;
+          .userList {
+            li {
+              div {
+                flex-direction: column;
+                gap: 20px;
+
+                .buttons {
+                  flex-direction: row;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

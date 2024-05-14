@@ -9,7 +9,7 @@ const Events = () => {
     <section className={styles.events}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <Search type='artist' />
+          <Search type='event' />
           <Tickets />
           <Popular />
           {/* Instead of datagrid use infinite scroll technique here */}

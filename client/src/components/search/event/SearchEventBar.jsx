@@ -11,7 +11,7 @@ const SearchEventBar = ({ showSuggestions, setShowSuggestions }) => {
       <form onSubmit={handleSearch}>
         <input
           type='text'
-          placeholder='Search for Artists, Events, etc.'
+          placeholder='Search for Events'
           name='input'
           id='input'
         />

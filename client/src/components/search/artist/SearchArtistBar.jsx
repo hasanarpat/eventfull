@@ -11,7 +11,7 @@ const SearchArtistBar = ({ showSuggestions, setShowSuggestions }) => {
       <form onSubmit={handleSearch}>
         <input
           type='text'
-          placeholder='Search for Artists, Events, etc.'
+          placeholder='Search for Artists'
           name='input'
           id='input'
         />

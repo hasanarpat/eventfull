@@ -8,6 +8,7 @@ import SearchEventBar from './event/SearchEventBar';
 import SearchArenaBar from './arena/SearchArenaBar';
 import SearchDefaultBar from './default/SearchDefaultBar';
 import { useState } from 'react';
+import Filter from '../filter/Filter';
 
 const Search = ({ type }) => {
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -63,7 +64,14 @@ const Search = ({ type }) => {
       onFocus={() => setShowSuggestions(true)}
       // onBlur={() => setShowSuggestions(false)}
     >
-      <div className={styles.searchBarLayout}>{searchComponentToReturn}</div>
+      <div className={styles.searchBarLayout}>
+        {type != 'user' && (
+          <div className={styles.filter}>
+            <Filter type={type} />
+          </div>
+        )}
+        {searchComponentToReturn}
+      </div>
     </div>
   );
 };

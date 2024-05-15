@@ -5,7 +5,6 @@
       display: flex;
       flex-direction: column;
       gap: 30px;
-
       .top {
         flex: 1;
         display: grid;
@@ -50,14 +49,20 @@
       }
 
       .bottom {
-        flex: 5;
+        flex: 7;
         display: grid;
         place-items: center;
-        overflow-y: scroll;
-        max-height: 60svh;
         padding: 0rem 5rem;
 
         .userList {
+          overflow-y: scroll;
+          max-height: 60svh;
+          scrollbar-width: 0;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
           width: 100%;
           max-width: 1024px;
           list-style: none;

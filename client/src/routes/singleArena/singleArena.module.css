@@ -142,6 +142,49 @@
       }
       .center {
         padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        .centerTop {
+          display: flex;
+          align-items: stretch;
+
+          .centerTopLeft {
+            flex: 3;
+            h3 {
+              font-size: 40px;
+              font-weight: 700;
+              margin-bottom: 1rem;
+              color: var(--text-secondary-color);
+            }
+
+            p {
+              margin-bottom: 1rem;
+              max-width: 90%;
+              text-align: justify;
+              font-size: 18px;
+            }
+
+            svg {
+              width: 18px;
+              height: 18px;
+              color: var(--primary-color);
+            }
+          }
+          .centerTopRight {
+            background-color: blue;
+            flex: 1;
+            min-height: 260px;
+          }
+        }
+        .centerBottom {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            color: var(--accent-color);
+          }
+        }
       }
 
       .bottom {

@@ -10,7 +10,6 @@
         aspect-ratio: 24/9;
         display: flex;
         gap: 30px;
-        padding: 1cqw;
 
         .filter {
           position: absolute;
@@ -306,6 +305,10 @@
               min-width: auto;
             }
           }
+        }
+
+        .bottom {
+          padding: 0 1rem;
         }
       }
     }

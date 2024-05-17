@@ -150,6 +150,7 @@
 
 @media screen and (max-width: 600px) {
   .comment {
+    padding: 0;
     .replies {
       margin-left: 0;
     }

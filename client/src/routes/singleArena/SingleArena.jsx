@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './singleArena.module.css';
 import { Link } from 'react-router-dom';
+import Comment from '../../components/comment/Comment';
 
 const SingleArena = () => {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -203,138 +204,11 @@ const SingleArena = () => {
                 </div>
               </div>
               <div className={styles.commentList}>
-                <div className={styles.comment}>
-                  <div className={styles.content}>
-                    <div className={styles.userAvatar}>
-                      <img
-                        src='https://images.unsplash.com/photo-1715454969547-a69afff2a701?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='arena img'
-                      />
-                    </div>
-                    <div className={styles.nameAndComment}>
-                      {' '}
-                      <h6>Jane Doe</h6>
-                      <p>
-                        Mollit qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.commentDate}>Dec 6, 2024</div>
-                </div>
-                <div className={styles.comment}>
-                  <div className={styles.content}>
-                    <div className={styles.userAvatar}>
-                      <img
-                        src='https://images.unsplash.com/photo-1715454969547-a69afff2a701?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='arena img'
-                      />
-                    </div>
-                    <div className={styles.nameAndComment}>
-                      {' '}
-                      <h6>Jane Doe</h6>
-                      <p>
-                        Mollit qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.commentDate}>Dec 6, 2024</div>
-                </div>{' '}
-                <div className={styles.comment}>
-                  <div className={styles.content}>
-                    <div className={styles.userAvatar}>
-                      <img
-                        src='https://images.unsplash.com/photo-1715454969547-a69afff2a701?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='arena img'
-                      />
-                    </div>
-                    <div className={styles.nameAndComment}>
-                      {' '}
-                      <h6>Jane Doe</h6>
-                      <p>
-                        Mollit qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.commentDate}>Dec 6, 2024</div>
-                </div>{' '}
-                <div className={styles.comment}>
-                  <div className={styles.content}>
-                    <div className={styles.userAvatar}>
-                      <img
-                        src='https://images.unsplash.com/photo-1715454969547-a69afff2a701?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='arena img'
-                      />
-                    </div>
-                    <div className={styles.nameAndComment}>
-                      {' '}
-                      <h6>Jane Doe</h6>
-                      <p>
-                        Mollit qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure. Mollit
-                        qui amet minim nulla pariatur qui et consectetur
-                        excepteur. Dolor laborum sint deserunt veniam qui
-                        deserunt eiusmod. Nostrud exercitation in cillum sunt
-                        nulla elit laboris voluptate ut et in eu irure.
-                      </p>
-                    </div>
-                  </div>
-                  <div className={styles.commentDate}>Dec 6, 2024</div>
-                </div>
+                <Comment />
+                <Comment />
+                <Comment />
+                <Comment />
+                <Comment />
               </div>
             </div>
           </div>

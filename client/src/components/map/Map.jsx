@@ -11,7 +11,7 @@ const Map = ({ items }) => {
         center={
           items.length === 1
             ? [items[0].latitude, items[0].longitude]
-            : [51.505, -0.09]
+            : [51.485, -0.139]
         }
         zoom={13}
         scrollWheelZoom={false}

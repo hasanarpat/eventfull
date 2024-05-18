@@ -3,6 +3,7 @@ import styles from './singleArena.module.css';
 import { Link } from 'react-router-dom';
 import Comment from '../../components/comment/Comment';
 import BigSLider from '../../components/bigSlider/BigSlider';
+import Map from '../../components/map/Map';
 
 const SingleArena = () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -126,7 +127,9 @@ const SingleArena = () => {
                   </svg>
                 </div>
               </div>
-              <div className={styles.centerTopRight}>map</div>
+              <div className={styles.centerTopRight}>
+                <Map />
+              </div>
             </div>
             <div className={styles.centerBottom}>
               <Link to='/'>See Arena Webpage</Link>

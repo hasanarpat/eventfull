@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Comment from '../../components/comment/Comment';
 import BigSLider from '../../components/bigSlider/BigSlider';
 import Map from '../../components/map/Map';
+import { mapItems } from '../../data/mock-map';
 
 const SingleArena = () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -128,7 +129,7 @@ const SingleArena = () => {
                 </div>
               </div>
               <div className={styles.centerTopRight}>
-                <Map />
+                <Map items={[mapItems[3]]} />
               </div>
             </div>
             <div className={styles.centerBottom}>

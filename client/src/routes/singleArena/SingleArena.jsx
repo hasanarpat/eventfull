@@ -1,20 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import styles from './singleArena.module.css';
 import { Link } from 'react-router-dom';
 import Comment from '../../components/comment/Comment';
+import BigSLider from '../../components/bigSlider/BigSlider';
 
 const SingleArena = () => {
-  const [slideIndex, setSlideIndex] = useState(0);
   const [showGallery, setShowGallery] = useState(false);
-  const sliderRef = useRef(null);
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      sliderRef.current.style.transform = `
-    translateX(${-slideIndex * 100}svw)
-    `;
-    }
-  }, [slideIndex]);
   return (
     <section className={styles.singleArena}>
       <div className={styles.container}>
@@ -42,68 +34,7 @@ const SingleArena = () => {
               </div>
             </div>
           </div>
-          {showGallery && (
-            <div className={styles.gallery}>
-              <div className={styles.galleryWrapper}>
-                <div className={styles.slider}>
-                  <span
-                    onClick={() =>
-                      setSlideIndex((prev) => (prev <= 0 ? 2 : prev - 1))
-                    }
-                  >
-                    <svg
-                      stroke='currentColor'
-                      fill='currentColor'
-                      strokeWidth='0'
-                      viewBox='0 0 448 512'
-                      height='1em'
-                      width='1em'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path>
-                    </svg>
-                  </span>
-                  <span
-                    onClick={() =>
-                      setSlideIndex((prev) => (prev >= 2 ? 0 : prev + 1))
-                    }
-                  >
-                    <svg
-                      stroke='currentColor'
-                      fill='currentColor'
-                      strokeWidth='0'
-                      viewBox='0 0 448 512'
-                      height='1em'
-                      width='1em'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'></path>
-                    </svg>
-                  </span>
-                  <div className={styles.sliderWrapper} ref={sliderRef}>
-                    <img
-                      src='https://images.unsplash.com/photo-1555089957-ce59fc3bce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      alt='arena img'
-                    />
-                    <img
-                      src='https://images.unsplash.com/photo-1715616680818-43a4a55d4d17?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      alt='arena img'
-                    />
-                    <img
-                      src='https://images.unsplash.com/photo-1715454969547-a69afff2a701?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                      alt='arena img'
-                    />
-                  </div>
-                </div>
-                <div
-                  className={styles.galleryClose}
-                  onClick={() => setShowGallery(false)}
-                >
-                  X
-                </div>
-              </div>
-            </div>
-          )}
+          {showGallery && <BigSLider setShowGallery={setShowGallery} />}
           <div className={styles.center}>
             <div className={styles.centerTop}>
               <div className={styles.centerTopLeft}>

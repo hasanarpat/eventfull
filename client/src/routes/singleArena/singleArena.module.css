@@ -74,9 +74,8 @@
           .slider {
             height: 100%;
             position: relative;
-            padding: 4rem;
-            overflow: hidden;
             background-color: var(--background-primary-color);
+            overflow: hidden;
 
             span {
               width: 64px;
@@ -87,11 +86,8 @@
               position: absolute;
               top: 50%;
               background-color: var(--background-primary-color);
-              display: flex;
-              align-items: center;
-              justify-content: center;
               cursor: pointer;
-              z-index: 99999999;
+              z-index: 99;
 
               &:hover {
                 background-color: var(--background-secondary-color);
@@ -109,12 +105,15 @@
 
             .sliderWrapper {
               display: flex;
-              width: 270svw;
+              width: 300svw;
               height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
 
               img {
-                width: 90svw;
-                aspect-ratio: 16/9;
+                width: 100svw;
+                height: 80%;
                 object-fit: cover;
               }
             }
@@ -280,7 +279,17 @@
             flex-direction: row;
           }
         }
-
+        .gallery {
+          .galleryWrapper {
+            .slider {
+              .sliderWrapper {
+                img {
+                  height: 50%;
+                }
+              }
+            }
+          }
+        }
         .center {
           .centerTop {
             flex-direction: column;
@@ -324,6 +333,13 @@
 
         .bottom {
           padding: 0 1rem;
+
+          .comments {
+            .writeComment {
+              padding: 0;
+              margin-bottom: 2rem;
+            }
+          }
         }
       }
     }

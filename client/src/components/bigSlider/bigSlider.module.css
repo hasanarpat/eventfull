@@ -94,6 +94,15 @@
           height: 48px;
           border-radius: 48px;
           font-size: 16px;
+
+          &:first-of-type {
+            left: 1rem;
+          }
+
+          &:last-of-type {
+            transform: rotate(180deg);
+            right: 1rem;
+          }
         }
         .sliderWrapper {
           img {

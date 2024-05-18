@@ -6,7 +6,6 @@
   flex-direction: column;
   gap: 30px;
   margin-top: 8px;
-  background-color: red;
 
   &:first-child {
     margin-top: 0;

@@ -194,6 +194,12 @@
         margin: auto;
         margin-top: 1rem;
       }
+      .map {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -282,6 +288,9 @@
               }
             }
           }
+        }
+        .map {
+          max-width: 100%;
         }
       }
     }

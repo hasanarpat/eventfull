@@ -1,8 +1,10 @@
 import AnnouncementCarousel from '../../components/announcement/AnnouncementCarousel';
 import Banner from '../../components/banner/Banner';
+import Map from '../../components/map/Map';
 import Search from '../../components/search/Search';
 import styles from './home.module.css';
 import { Link } from 'react-router-dom';
+import { mapItems } from '../../data/mock-map';
 
 const Home = () => {
   return (
@@ -132,6 +134,9 @@ const Home = () => {
               </div>
             </Link>
           </section>
+          <div className={styles.map}>
+            <Map items={mapItems} />
+          </div>
         </div>
       </div>
     </section>

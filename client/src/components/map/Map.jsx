@@ -5,8 +5,6 @@ import styles from './map.module.css';
 import Pin from '../pin/Pin';
 
 const Map = ({ items }) => {
-  console.log(items);
-
   return (
     <div className={styles.map}>
       <MapContainer

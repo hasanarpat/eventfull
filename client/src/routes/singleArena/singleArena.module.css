@@ -83,15 +83,6 @@
   .singleArena {
     .container {
       .wrapper {
-        .top {
-          aspect-ratio: 16/12;
-          flex-direction: column;
-
-          .smallImages {
-            flex-direction: row;
-          }
-        }
-
         .center {
           .centerTop {
             flex-direction: column;

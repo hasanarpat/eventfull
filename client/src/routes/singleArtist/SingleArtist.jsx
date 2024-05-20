@@ -16,11 +16,13 @@ const SingleArtist = () => {
             <Gallery setShowGallery={setShowGallery} />
           </div>
           {showGallery && <BigSlider setShowGallery={setShowGallery} />}
-          <div className={styles.center}></div>
+          <div className={styles.center}>
+            <div className={styles.centerTop}>Details</div>
+            <div className={styles.centerBottom}>Upcoming Events</div>
+          </div>
           <div className={styles.bottom}>
             <div className={styles.comments}>
               <WriteComment />
-
               <div className={styles.commentList}>
                 <Comment />
                 <Comment />

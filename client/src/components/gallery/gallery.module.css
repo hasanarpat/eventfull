@@ -59,6 +59,18 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .gallery {
+    padding: 8px;
+    aspect-ratio: 16/12;
+    flex-direction: column;
+
+    .smallImages {
+      flex-direction: row;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .gallery {
     aspect-ratio: 12/9;
@@ -73,17 +85,6 @@
 
       .seeMore {
         min-width: auto;
-      }
-    }
-  }
-
-  .bottom {
-    padding: 0 1rem;
-
-    .comments {
-      .writeComment {
-        padding: 0;
-        margin-bottom: 2rem;
       }
     }
   }

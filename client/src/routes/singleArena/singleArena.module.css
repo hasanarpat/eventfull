@@ -6,58 +6,6 @@
       gap: 30px;
 
       .top {
-        padding: 0 2rem;
-        width: 100%;
-        aspect-ratio: 24/9;
-        display: flex;
-        gap: 30px;
-
-        .filter {
-          position: absolute;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          z-index: 10;
-          background: rgba(0, 0, 0, 0.4);
-        }
-
-        img {
-          object-fit: cover;
-          border-radius: 12px;
-        }
-
-        .mainImage {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          flex: 4;
-        }
-
-        .smallImages {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-
-          img,
-          .seeMore {
-            width: 100%;
-            height: 100%;
-            min-width: 240px;
-
-            &:hover {
-              filter: grayscale(50%);
-            }
-          }
-
-          .seeMore {
-            background-color: var(--text-secondary-color);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-        }
       }
 
       .center {
@@ -120,68 +68,11 @@
         margin-bottom: 2rem;
 
         .comments {
-          img {
-            width: 48px;
-            height: 48px;
-            border-radius: 48px;
-          }
-          .writeComment {
-            padding: 1rem;
-            border-radius: 0.5rem;
-            display: flex;
-            align-items: stretch;
-            gap: 30px;
-
-            .input {
-              flex: 11;
-
-              form {
-                height: 100%;
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-
-                input {
-                  width: 100%;
-                  height: 100%;
-                  padding-left: 1rem;
-                  font-size: 18px;
-                  outline: none;
-                }
-
-                button {
-                  width: 48px;
-                  height: 48px;
-                  border-radius: 48px;
-                  cursor: pointer;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  svg {
-                    font-size: 24px;
-                  }
-                }
-              }
-            }
-          }
-
           .commentList {
             display: flex;
             flex-direction: column;
             gap: 1rem;
           }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1566px) {
-  .singleArena {
-    .container {
-      .wrapper {
-        .top {
-          aspect-ratio: 16/9;
         }
       }
     }
@@ -225,32 +116,8 @@
   .singleArena {
     .container {
       .wrapper {
-        .top {
-          aspect-ratio: 12/9;
-
-          .smallImages {
-            img {
-              min-width: auto;
-              &:nth-child(2) {
-                display: none;
-              }
-            }
-
-            .seeMore {
-              min-width: auto;
-            }
-          }
-        }
-
         .bottom {
           padding: 0 1rem;
-
-          .comments {
-            .writeComment {
-              padding: 0;
-              margin-bottom: 2rem;
-            }
-          }
         }
       }
     }

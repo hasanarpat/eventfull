@@ -7,6 +7,12 @@
   gap: 30px;
   margin-top: 8px;
 
+  img {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+  }
+
   &:first-child {
     margin-top: 0;
   }

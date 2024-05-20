@@ -1,6 +1,9 @@
 import styles from './singleArtist.module.css';
+import Gallery from '../../components/gallery/Gallery';
 import BigSlider from '../../components/bigSlider/BigSlider';
 import { useState } from 'react';
+import WriteComment from '../../components/writeComment/WriteComment';
+import Comment from '../../components/comment/Comment';
 
 const SingleArtist = () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -10,31 +13,22 @@ const SingleArtist = () => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <div className={styles.top}>
-            <img
-              src='https://images.unsplash.com/photo-1555089957-ce59fc3bce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-              alt='arena img'
-              className={styles.mainImage}
-            />
-            <div className={styles.smallImages}>
-              <img
-                src='https://images.unsplash.com/photo-1555089957-ce59fc3bce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                alt='arena img'
-              />
-              <img
-                src='https://images.unsplash.com/photo-1555089957-ce59fc3bce21?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                alt='arena img'
-              />
-              <div
-                className={styles.seeMore}
-                onClick={() => setShowGallery(true)}
-              >
-                See more photos...
+            <Gallery setShowGallery={setShowGallery} />
+          </div>
+          {showGallery && <BigSlider setShowGallery={setShowGallery} />}
+          <div className={styles.center}></div>
+          <div className={styles.bottom}>
+            <div className={styles.comments}>
+              <WriteComment />
+
+              <div className={styles.commentList}>
+                <Comment />
+                <Comment />
+                <Comment />
+                <Comment />
               </div>
             </div>
           </div>
-          {showGallery && <BigSlider />}
-          <div className={styles.center}></div>
-          <div className={styles.bottom}></div>
         </div>
       </div>
     </section>

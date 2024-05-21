@@ -5,6 +5,7 @@ import Comment from '../../components/comment/Comment';
 import Gallery from '../../components/gallery/Gallery';
 import BigSLider from '../../components/bigSlider/BigSlider';
 import Map from '../../components/map/Map';
+import SmartParagraph from '../../components/smartParagraph/SmartParagraph';
 import { mapItems } from '../../data/mock-map';
 import WriteComment from '../../components/writeComment/WriteComment';
 
@@ -23,8 +24,8 @@ const SingleArena = () => {
             <div className={styles.centerTop}>
               <div className={styles.centerTopLeft}>
                 <h3>Arena Rock Stadium</h3>
-                <p>
-                  Consequat voluptate amet pariatur nulla. Reprehenderit
+                <SmartParagraph
+                  text='Consequat voluptate amet pariatur nulla. Reprehenderit
                   excepteur laboris do veniam. Sunt officia esse duis nostrud
                   est pariatur. Consequat voluptate amet pariatur nulla.
                   Reprehenderit excepteur laboris do veniam. Sunt officia esse
@@ -67,8 +68,9 @@ const SingleArena = () => {
                   excepteur laboris do veniam. Sunt officia esse duis nostrud
                   est pariatur. Consequat voluptate amet pariatur nulla.
                   Reprehenderit excepteur laboris do veniam. Sunt officia esse
-                  duis nostrud est pariatur.
-                </p>
+                  duis nostrud est pariatur.'
+                  type='arena'
+                />
                 <p>3204 St. Revenue Avenue Gazhane Istanbul</p>
                 <div className={styles.arenaRate}>
                   {' '}

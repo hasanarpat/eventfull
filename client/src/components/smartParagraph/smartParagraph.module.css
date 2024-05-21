@@ -3,7 +3,6 @@
     margin-bottom: 1rem;
     max-width: 95%;
     text-align: justify;
-    font-size: 18px;
     max-height: 200px;
     overflow-y: scroll;
     &::-webkit-scrollbar {

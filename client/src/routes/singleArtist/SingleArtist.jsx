@@ -22,6 +22,7 @@ const SingleArtist = () => {
               <div className={styles.artistInfo}>
                 <h4>Hayko Cepkin</h4>
                 <SmartParagraph
+                  type='artist'
                   text='Cillum nostrud non ad ullamco elit eu et dolore esse. Proident
                   deserunt sunt aliqua laborum adipisicing duis labore anim
                   nulla. Tempor magna voluptate officia adipisicing. Cillum

@@ -25,20 +25,6 @@
               color: var(--text-secondary-color);
             }
 
-            p {
-              margin-bottom: 1rem;
-              max-width: 95%;
-              text-align: justify;
-              font-size: 18px;
-              max-height: 200px;
-              overflow-y: scroll;
-              &::-webkit-scrollbar {
-                display: none;
-              }
-              -ms-overflow-style: none; /* IE and Edge */
-              scrollbar-width: none; /* Firefox */
-            }
-
             svg {
               width: 18px;
               height: 18px;

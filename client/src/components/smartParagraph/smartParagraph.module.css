@@ -1,0 +1,23 @@
+.smartParagraph {
+  p {
+    margin-bottom: 1rem;
+    max-width: 95%;
+    text-align: justify;
+    font-size: 18px;
+    max-height: 200px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .smartParagraph {
+    p {
+      max-width: 100%;
+    }
+  }
+}

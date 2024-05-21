@@ -4,6 +4,7 @@ import BigSlider from '../../components/bigSlider/BigSlider';
 import { useState } from 'react';
 import WriteComment from '../../components/writeComment/WriteComment';
 import Comment from '../../components/comment/Comment';
+import SmartParagraph from '../../components/smartParagraph/SmartParagraph';
 
 const SingleArtist = () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -20,8 +21,8 @@ const SingleArtist = () => {
             <div className={styles.centerTop}>
               <div className={styles.artistInfo}>
                 <h4>Hayko Cepkin</h4>
-                <p>
-                  Cillum nostrud non ad ullamco elit eu et dolore esse. Proident
+                <SmartParagraph
+                  text='Cillum nostrud non ad ullamco elit eu et dolore esse. Proident
                   deserunt sunt aliqua laborum adipisicing duis labore anim
                   nulla. Tempor magna voluptate officia adipisicing. Cillum
                   nostrud non ad ullamco elit eu et dolore esse. Proident
@@ -47,8 +48,35 @@ const SingleArtist = () => {
                   nulla. Tempor magna voluptate officia adipisicing. Cillum
                   nostrud non ad ullamco elit eu et dolore esse. Proident
                   deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.
-                </p>
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim labore anim
+                  nulla. Tempor magna voluptate officia adipisicing. Cillum
+                  nostrud non ad ullamco elit eu et dolore esse. Proident
+                  deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing. Cillum
+                  nostrud non ad ullamco elit eu et dolore esse. Proident
+                  deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim labore anim
+                  nulla. Tempor magna voluptate officia adipisicing. Cillum
+                  nostrud non ad ullamco elit eu et dolore esse. Proident
+                  deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing. Cillum
+                  nostrud non ad ullamco elit eu et dolore esse. Proident
+                  deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
+                  nulla. Tempor magna voluptate officia adipisicing.'
+                />
                 <div className={styles.artistRate}>
                   <svg
                     stroke='currentColor'

@@ -19,18 +19,6 @@
               font-weight: 700;
             }
 
-            p {
-              text-align: justify;
-              max-height: 120px;
-              overflow-y: scroll;
-              scrollbar-width: 0;
-              &::-webkit-scrollbar {
-                display: none;
-              }
-              -ms-overflow-style: none; /* IE and Edge */
-              scrollbar-width: none; /* Firefox */
-              padding-right: 6px;
-            }
             .artistRate {
               display: flex;
               align-items: center;
@@ -57,6 +45,7 @@
               max-width: 120px;
               max-height: 120px;
               fill: var(--accent-color);
+              cursor: pointer;
             }
           }
         }
@@ -66,6 +55,44 @@
       }
       .bottom {
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .singleArtist {
+    .container {
+      .wrapper {
+        .center {
+          .centerTop {
+            flex-direction: column;
+            background-color: red;
+
+            .share {
+              background-color: rebeccapurple;
+              svg {
+                width: 10%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .singleArtist {
+    .container {
+      .wrapper {
+        .center {
+          .centerTop {
+            .share {
+              margin-top: 0.5rem;
+            }
+          }
+        }
       }
     }
   }

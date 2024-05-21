@@ -2,7 +2,6 @@
   .container {
     .wrapper {
       .artistDetails {
-        margin-top: 1rem;
         margin-bottom: 1rem;
         position: relative;
         aspect-ratio: 16/4;
@@ -122,7 +121,97 @@
           }
         }
         .centerBottom {
-          height: 100px;
+          h5 {
+            font-size: 24px;
+            margin-bottom: 1rem;
+          }
+
+          max-width: 1396px;
+          margin: auto;
+
+          .upcomingEvents {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            .upcomingEvent {
+              background-color: var(--background-dark-color);
+              color: var(--text-secondary-color);
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              max-width: 420px;
+              border: 1px solid var(--helper-color);
+              border-top-left-radius: 20px;
+              border-top-right-radius: 20px;
+              .upcomingMainImg {
+                width: 100%;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                margin-bottom: 30px;
+
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+              }
+              p {
+                padding-left: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 18px;
+
+                &:last-child {
+                  background-color: #fff;
+                }
+
+                svg {
+                  width: 32px;
+                  height: 32px;
+                }
+              }
+              a {
+                margin-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-bottom: 8px;
+                width: 100%;
+                button {
+                  width: 100%;
+                  padding: 10px 0px;
+                  font-size: 18px;
+                  cursor: pointer;
+                  border-radius: 24px;
+                  background-color: var(--helper-color);
+                  transition: background-color 1s ease;
+
+                  &:hover {
+                    background-color: var(--accent-color);
+                  }
+                }
+              }
+
+              .eventDetail {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-left: 20px;
+                img {
+                  width: 48px;
+                  height: 48px;
+                  object-fit: cover;
+                  border-radius: 50%;
+                }
+
+                h5 {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
         }
       }
       .bottom {

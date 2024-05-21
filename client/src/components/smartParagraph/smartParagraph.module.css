@@ -11,6 +11,8 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  color: var(--text-secondary-color);
 }
 
 @media screen and (max-width: 1024px) {

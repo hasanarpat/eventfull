@@ -13,14 +13,36 @@ const SingleArtist = () => {
     <section className={styles.singleArtist}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
-          <div className={styles.top}>
-            <Gallery setShowGallery={setShowGallery} />
+          <div className={styles.artistDetails}>
+            <img
+              src='https://cdn.bubilet.com.tr/files/Blog/resim-adi-88136.png'
+              alt='hayko cepkin'
+            />
+            <div className={styles.detailsWrapper}>
+              <div className={styles.leftSide}>
+                <img
+                  src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6Wq6K_6Obzi40Ytbr4ho96zjAtqQVzuJZUD0DJ1lVaSdCdpMq'
+                  alt=''
+                />
+                <div className={styles.actions}>
+                  <p>Artist</p>
+                  <h4>Hayko Cepkin</h4>
+                  <div className={styles.buttons}>
+                    <button>See Events</button>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.rightSide}>
+                <p>2,114,123</p>
+                <p>Total Tickets Count</p>
+              </div>
+            </div>
           </div>
-          {showGallery && <BigSlider setShowGallery={setShowGallery} />}
+
           <div className={styles.center}>
             <div className={styles.centerTop}>
               <div className={styles.artistInfo}>
-                <h4>Hayko Cepkin</h4>
                 <SmartParagraph
                   type='artist'
                   text='Cillum nostrud non ad ullamco elit eu et dolore esse. Proident
@@ -133,6 +155,10 @@ const SingleArtist = () => {
             </div>
             <div className={styles.centerBottom}>Upcoming Events</div>
           </div>
+          <div className={styles.top}>
+            <Gallery setShowGallery={setShowGallery} />
+          </div>
+          {showGallery && <BigSlider setShowGallery={setShowGallery} />}
           <div className={styles.bottom}>
             <div className={styles.comments}>
               <WriteComment />

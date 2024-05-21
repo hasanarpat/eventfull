@@ -5,6 +5,7 @@ import { useState } from 'react';
 import WriteComment from '../../components/writeComment/WriteComment';
 import Comment from '../../components/comment/Comment';
 import SmartParagraph from '../../components/smartParagraph/SmartParagraph';
+import Rate from '../../components/rate/Rate';
 
 const SingleArtist = () => {
   const [showGallery, setShowGallery] = useState(false);
@@ -45,98 +46,28 @@ const SingleArtist = () => {
               <div className={styles.artistInfo}>
                 <SmartParagraph
                   type='artist'
-                  text='Cillum nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing. Cillum
-                  nostrud non ad ullamco elit eu et dolore esse. Proident
-                  deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.deserunt sunt aliqua laborum adipisicing duis labore anim
-                  nulla. Tempor magna voluptate officia adipisicing.'
+                  text='Exercitation excepteur quis labore cillum laborum Lorem reprehenderit cillum reprehenderit proident ad est culpa. Esse dolor reprehenderit adipisicing sunt irure culpa ullamco mollit officia enim dolor. In sint magna do dolore cupidatat aute Lorem officia ullamco proident fugiat cupidatat consectetur nulla. Cupidatat pariatur nulla aliqua quis aliqua laborum ea.
+
+Eiusmod sint anim sit ea minim. Elit laboris cupidatat nisi reprehenderit labore aliqua officia sint Lorem do. Ad commodo occaecat veniam sit sit consectetur labore incididunt anim officia. Sit enim qui nulla aliqua eu ex ullamco do anim mollit exercitation. Laboris incididunt exercitation magna elit magna nulla sit consectetur enim sint.
+
+Do esse aliqua ad exercitation dolore duis laborum proident esse ipsum dolore ea. Voluptate ea laborum non nisi. Ut anim duis magna irure amet elit. Exercitation nulla nulla voluptate culpa dolore nulla excepteur. Cupidatat ipsum tempor et enim in ex Lorem in. Sunt Lorem culpa amet fugiat adipisicing officia ut magna aliquip culpa sit elit. Ex minim adipisicing non voluptate nisi consequat ullamco occaecat non mollit pariatur nulla.
+
+Est do do duis exercitation incididunt aliqua tempor laborum enim mollit consectetur do. Enim sit culpa aliquip sit consectetur magna. Veniam anim aliquip minim occaecat aute eiusmod consectetur ea quis in mollit mollit id.
+
+Adipisicing ad consectetur tempor ad aute. Ad consectetur in officia incididunt proident commodo minim consectetur. Dolor deserunt aute culpa adipisicing aliqua nostrud esse amet tempor ad non. Nulla excepteur laboris mollit consectetur laboris. Velit ex sit tempor minim aute magna proident nostrud est labore eu. Labore consequat elit est excepteur aliquip non excepteur culpa velit incididunt pariatur cillum irure labore. Sit excepteur sunt culpa tempor.
+
+Anim culpa laborum veniam sit qui laboris. Sunt sit sunt labore ut eu ea duis exercitation nostrud non excepteur elit eiusmod. Culpa id eiusmod do duis Lorem adipisicing ea est nostrud ut. Veniam culpa pariatur sint aliquip voluptate reprehenderit duis et quis anim quis excepteur non.
+
+Nostrud irure voluptate Lorem nisi magna ut culpa laboris. Adipisicing occaecat nulla sunt commodo duis dolore ea nulla nostrud do ex magna tempor nisi. Minim aute velit commodo consectetur laboris aliquip culpa ad do incididunt voluptate. Exercitation exercitation minim quis aliquip laboris laborum. Sint do eiusmod nisi velit do eiusmod anim ex minim mollit deserunt sint officia culpa.
+
+Sint exercitation occaecat enim cillum commodo excepteur do nostrud tempor sint. Pariatur sit tempor non commodo eu adipisicing minim magna. Laborum sunt dolor amet commodo labore dolore eiusmod.
+
+Nostrud duis cillum consequat exercitation occaecat sit ad cupidatat eu sunt occaecat non officia. Laboris dolore reprehenderit laborum aute exercitation Lorem officia adipisicing. Laboris do veniam enim consectetur dolore magna et. Excepteur minim consequat dolore ea nulla minim mollit officia voluptate non enim exercitation qui.
+
+Elit ad ex nostrud ex. In esse qui veniam quis enim aliqua consectetur velit. Anim labore incididunt dolore reprehenderit. Lorem consectetur pariatur incididunt enim esse officia. Est voluptate consequat id cupidatat officia aute occaecat culpa. Elit adipisicing esse ex labore sint in ad ut in nostrud.'
                 />
                 <div className={styles.artistRate}>
-                  <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    strokeWidth='0'
-                    viewBox='0 0 576 512'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'></path>
-                  </svg>{' '}
-                  <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    strokeWidth='0'
-                    viewBox='0 0 576 512'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'></path>
-                  </svg>{' '}
-                  <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    strokeWidth='0'
-                    viewBox='0 0 576 512'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'></path>
-                  </svg>{' '}
-                  <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    strokeWidth='0'
-                    viewBox='0 0 576 512'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path d='M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z'></path>
-                  </svg>
+                  <Rate />
                 </div>
               </div>
               <div className={styles.share}>

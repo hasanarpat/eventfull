@@ -103,19 +103,6 @@
 
           .artistInfo {
             flex: 5;
-
-            .artistRate {
-              display: flex;
-              align-items: center;
-              gap: 10px;
-              margin-top: 1rem;
-
-              svg {
-                width: 32px;
-                height: 32px;
-                fill: var(--primary-color);
-              }
-            }
           }
 
           .share {
@@ -139,6 +126,7 @@
         }
       }
       .bottom {
+        margin-top: 1rem;
         margin-bottom: 1rem;
       }
     }

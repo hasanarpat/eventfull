@@ -160,12 +160,9 @@
 @media screen and (max-width: 600px) {
   .comment {
     padding: 0;
+    padding-left: 4px;
     .replies {
       margin-left: 0;
-
-      .comment {
-        background-color: saddlebrown;
-      }
     }
   }
 }

@@ -7,12 +7,11 @@ import Comment from '../../components/comment/Comment';
 import SmartParagraph from '../../components/smartParagraph/SmartParagraph';
 import Rate from '../../components/rate/Rate';
 import { Link } from 'react-router-dom';
+import Share from '../../components/share/Share';
 
 const SingleArtist = () => {
   const [showGallery, setShowGallery] = useState(false);
   const [showShare, setShowShare] = useState(false);
-
-  const url = location.href;
 
   return (
     <section className={styles.singleArtist}>
@@ -87,49 +86,7 @@ Elit ad ex nostrud ex. In esse qui veniam quis enim aliqua consectetur velit. An
                   <path d='M448 80v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48zM304 296c-14.562 0-27.823 5.561-37.783 14.671l-67.958-40.775a56.339 56.339 0 0 0 0-27.793l67.958-40.775C276.177 210.439 289.438 216 304 216c30.928 0 56-25.072 56-56s-25.072-56-56-56-56 25.072-56 56c0 4.797.605 9.453 1.74 13.897l-67.958 40.775C171.823 205.561 158.562 200 144 200c-30.928 0-56 25.072-56 56s25.072 56 56 56c14.562 0 27.823-5.561 37.783-14.671l67.958 40.775a56.088 56.088 0 0 0-1.74 13.897c0 30.928 25.072 56 56 56s56-25.072 56-56C360 321.072 334.928 296 304 296z'></path>
                 </svg>
               </div>
-              {showShare && (
-                <div className={styles.sharePopup}>
-                  <div className={styles.popupContent}>
-                    <div className={styles.popupClose}>
-                      <span onClick={() => setShowShare(false)}>
-                        <svg
-                          stroke='currentColor'
-                          fill='currentColor'
-                          strokeWidth='0'
-                          viewBox='0 0 512 512'
-                          height='1.5em'
-                          width='1.5em'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path d='M256 48C140.559 48 48 140.559 48 256c0 115.436 92.559 208 208 208 115.435 0 208-92.564 208-208 0-115.441-92.564-208-208-208zm104.002 282.881l-29.12 29.117L256 285.117l-74.881 74.881-29.121-29.117L226.881 256l-74.883-74.881 29.121-29.116L256 226.881l74.881-74.878 29.12 29.116L285.119 256l74.883 74.881z'></path>
-                        </svg>
-                      </span>
-                    </div>
-                    <div className={styles.popupUrl}>
-                      <svg
-                        stroke='currentColor'
-                        fill='currentColor'
-                        strokeWidth='0'
-                        viewBox='0 0 384 512'
-                        height='1.25em'
-                        width='1.25em'
-                        xmlns='http://www.w3.org/2000/svg'
-                      >
-                        <path d='M384 112v352c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h80c0-35.29 28.71-64 64-64s64 28.71 64 64h80c26.51 0 48 21.49 48 48zM192 40c-13.255 0-24 10.745-24 24s10.745 24 24 24 24-10.745 24-24-10.745-24-24-24m96 114v-20a6 6 0 0 0-6-6H102a6 6 0 0 0-6 6v20a6 6 0 0 0 6 6h180a6 6 0 0 0 6-6z'></path>
-                      </svg>
-                      <span>{url}</span>
-                    </div>
-                    <p>Share on social platforms</p>
-                    <div className={styles.popupSocials}>
-                      <img src='/assets/social-icons/facebook.webp' alt='' />
-                      <img src='/assets/social-icons/instagram.webp' alt='' />
-                      <img src='/assets/social-icons/linkedin.webp' alt='' />
-                      <img src='/assets/social-icons/pinterest.webp' alt='' />
-                      <img src='/assets/social-icons/x.png' alt='' />
-                    </div>
-                  </div>
-                </div>
-              )}
+              {showShare && <Share setShowShare={setShowShare} />}
             </div>
             <div className={styles.centerBottom}>
               <h5>Upcoming Events</h5>

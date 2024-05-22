@@ -57,6 +57,7 @@
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
         padding-right: 6px;
+        color: var(--text-secondary-color);
       }
 
       .commentActions {
@@ -78,6 +79,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          color: white;
         }
 
         .reply {

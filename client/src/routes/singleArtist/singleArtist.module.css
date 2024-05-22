@@ -18,6 +18,7 @@
           bottom: 0.5rem;
           display: flex;
           align-items: flex-end;
+          color: var(--text-secondary-color);
 
           .leftSide {
             flex: 5;
@@ -138,7 +139,7 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
             .upcomingEvent {
-              background-color: var(--background-dark-color);
+              background-color: var(--background-secondary-color);
               color: var(--text-secondary-color);
               display: flex;
               flex-direction: column;

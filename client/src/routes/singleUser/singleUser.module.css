@@ -1,2 +1,101 @@
 .singleUser {
+  .container {
+    .wrapper {
+      .top {
+        background-image: url(https://images.unsplash.com/photo-1716093264767-7d818c805f7c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        aspect-ratio: 16/3;
+        background-size: cover;
+        background-position: 0% 20%;
+        background-blend-mode: difference;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-inline: 1rem;
+        padding-bottom: 1rem;
+
+        .topLeft {
+          display: flex;
+          align-items: center;
+          img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+
+          .userInfo {
+            margin-left: 1.25rem;
+            color: white;
+            h5 {
+              font-size: 32px;
+              margin-bottom: 1rem;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .userActions {
+          .buttons {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            button {
+              width: 140px;
+              padding: 12px 32px;
+              cursor: pointer;
+              background-color: var(--accent-color);
+              border: none;
+              border-radius: 24px;
+              min-width: min-content;
+
+              &:last-child {
+                background-color: var(--helper-color);
+              }
+              &:hover {
+                background-color: var(--background-primary-color);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    .wrapper {
+      .top {
+        flex-direction: column;
+
+        .topLeft {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .userInfo {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        .userActions {
+          width: 100%;
+          .buttons {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
 }

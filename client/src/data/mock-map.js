@@ -5,6 +5,7 @@ export const mapItems = [
     latitude: 51.485,
     longitude: -0.112,
     seat: 632,
+    id: 12411,
   },
   {
     title: 'Arena Camp',
@@ -12,6 +13,7 @@ export const mapItems = [
     latitude: 51.478,
     longitude: -0.191,
     seat: 632,
+    id: 12411,
   },
   {
     title: 'Arena Damp',
@@ -19,6 +21,7 @@ export const mapItems = [
     latitude: 51.483,
     longitude: -0.119,
     seat: 632,
+    id: 12411,
   },
   {
     title: 'Arena Punk',
@@ -26,5 +29,6 @@ export const mapItems = [
     latitude: 51.485,
     longitude: -0.123,
     seat: 632,
+    id: 12411,
   },
 ];

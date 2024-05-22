@@ -10,7 +10,7 @@ const Pin = ({ item }) => {
         <div className={styles.popupContainer}>
           <img src={item.img} alt='' />
           <div className={styles.textContainer}>
-            <Link to={`/${item.id}`}>{item.title}</Link>
+            <Link to={`/arena/${item.id}`}>{item.title}</Link>
             <span>{item.seat}</span>
           </div>
         </div>

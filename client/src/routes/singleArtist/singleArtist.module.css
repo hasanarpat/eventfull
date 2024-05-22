@@ -121,15 +121,15 @@
           }
         }
         .centerBottom {
+          margin-top: 3rem;
           h5 {
             font-size: 24px;
             margin-bottom: 1rem;
           }
-
-          max-width: 1396px;
-          margin: auto;
-
           .upcomingEvents {
+            max-width: 1396px;
+            margin: auto;
+
             display: flex;
             align-items: stretch;
             justify-content: center;
@@ -143,7 +143,7 @@
               display: flex;
               flex-direction: column;
               align-items: start;
-              max-width: 420px;
+              max-width: 320px;
               border: 1px solid var(--helper-color);
               border-top-left-radius: 20px;
               border-top-right-radius: 20px;
@@ -310,6 +310,14 @@
           .centerTop {
             .share {
               margin-top: 0.5rem;
+            }
+          }
+
+          .centerBottom {
+            .upcomingEvents {
+              .upcomingEvent {
+                max-width: 100%;
+              }
             }
           }
         }

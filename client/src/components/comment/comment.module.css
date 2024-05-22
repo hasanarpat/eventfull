@@ -116,7 +116,7 @@
 
   .replies {
     background-color: var(--background-secondary-color);
-    margin-left: calc(1rem + 60px);
+    margin-left: calc(0.2rem + 10px);
 
     .comment {
       border-left: 3px solid var(--accent-color);

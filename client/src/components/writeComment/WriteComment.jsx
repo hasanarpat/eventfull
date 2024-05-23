@@ -1,6 +1,10 @@
 import styles from './writeComment.module.css';
 
 const WriteComment = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
   return (
     <div className={styles.writeComment}>
       <div className={styles.userAvatar}>
@@ -10,7 +14,7 @@ const WriteComment = () => {
         />
       </div>
       <div className={styles.input}>
-        <form action=''>
+        <form onSubmit={handleSubmit}>
           <input type='text' placeholder='Write your comment here' />
           <button>
             <svg

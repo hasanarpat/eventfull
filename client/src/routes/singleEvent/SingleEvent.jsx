@@ -1,4 +1,7 @@
 import styles from './singleEvent.module.css';
+import Map from '../../components/map/Map';
+import { mapItems } from '../../data/mock-map';
+import { Link } from 'react-router-dom';
 
 const SingleEvent = () => {
   return (
@@ -71,62 +74,96 @@ const SingleEvent = () => {
               </div>
             </div>
             <div className={styles.bottom}>
-              Cillum est eiusmod proident excepteur. Anim non non nulla ullamco
-              dolor occaecat. Irure veniam sit mollit aliqua culpa et. Anim
-              laborum incididunt ex esse. Consequat officia sit eiusmod et culpa
-              commodo adipisicing cillum nulla adipisicing tempor laboris eu.
-              Eiusmod tempor do eu adipisicing ut qui adipisicing nulla id minim
-              sint nulla. Fugiat deserunt cillum ex cillum eu sint dolor quis.
-              Incididunt quis magna cupidatat quis cillum labore voluptate
-              cillum non laboris ad eiusmod. Excepteur et magna ex occaecat
-              culpa aliqua non exercitation ullamco irure dolor voluptate elit
-              id. Qui labore veniam nisi exercitation aliquip incididunt
-              excepteur. Est ex incididunt sit do velit est minim officia
-              pariatur laboris elit et ipsum mollit. Ex incididunt irure sit
-              cillum adipisicing veniam culpa commodo. Et esse qui aliqua mollit
-              qui excepteur eu cillum sunt laborum duis. Cillum consectetur
-              occaecat qui ea eiusmod esse qui. Veniam eu cupidatat non nulla
-              magna sint deserunt. Ex ex laboris velit aute ullamco pariatur
-              qui. Commodo incididunt ea nulla commodo voluptate. Ea ad
-              incididunt laboris ullamco cillum officia fugiat eu. Ipsum
-              incididunt velit adipisicing aliquip officia ut excepteur eiusmod
-              pariatur magna sit fugiat enim occaecat. Proident elit qui eiusmod
-              est sunt ipsum pariatur Lorem ullamco pariatur pariatur
-              adipisicing. Qui consequat velit velit ea ullamco minim quis sit
-              deserunt ullamco proident anim in. Consequat minim esse nostrud id
-              incididunt ex cillum elit fugiat. Irure irure laborum exercitation
-              excepteur sunt laboris fugiat sint nisi Lorem ut cillum in id. Ut
-              commodo Lorem sunt cillum reprehenderit voluptate ex. Laboris
-              consequat consectetur nisi elit dolore voluptate excepteur
-              laboris. Officia eiusmod duis pariatur qui dolor. Sunt fugiat
-              tempor cupidatat culpa irure nulla elit voluptate sit ad eu
-              proident. Reprehenderit esse magna laborum non magna in in mollit
-              et excepteur sint. In voluptate anim id ipsum nisi fugiat et anim
-              non velit. Dolor qui nostrud non aliqua. Lorem esse veniam ex
-              commodo dolore sint. Id cillum adipisicing est cupidatat laborum
-              pariatur magna. Commodo adipisicing esse commodo laboris duis.
-              Occaecat commodo aute in proident do. Sint cupidatat proident ut
-              ex aute qui cupidatat nostrud amet mollit culpa id dolore labore.
-              Sit elit non nulla qui duis magna laborum sunt aute. Veniam aliqua
-              nisi pariatur cupidatat culpa aliquip cillum et velit duis laborum
-              consequat ut est. Sunt ipsum qui esse nostrud nostrud culpa sint
-              nisi incididunt deserunt reprehenderit proident. Fugiat sint
-              mollit qui proident fugiat et fugiat dolore anim culpa enim
-              exercitation excepteur. Amet et aliqua mollit irure irure. Velit
-              cillum ipsum exercitation quis deserunt cillum deserunt voluptate
-              ipsum. Exercitation proident duis fugiat esse. Excepteur dolore ex
-              cillum enim aute irure laborum duis in dolore incididunt veniam
-              nostrud. Enim ea nostrud ut consequat amet nulla labore cupidatat.
-              Anim dolore sunt et in consequat reprehenderit anim ullamco Lorem
-              non pariatur ullamco reprehenderit. Eu esse duis nulla anim.
-              Labore esse velit sit amet magna nulla magna ipsum cillum ea. Amet
-              in labore ut anim irure ea. Proident quis cillum est dolor
-              proident et nostrud dolore magna sit ullamco ea culpa ut. Pariatur
-              tempor cillum fugiat et et esse ut mollit. Anim irure veniam do
-              deserunt incididunt aliqua nulla ea aliquip voluptate ex quis
-              aliqua id. Labore ullamco consequat esse ad cupidatat dolore Lorem
-              ipsum eu anim. Enim qui ex do non laboris sint aute dolor enim
-              tempor proident. Cillum deserunt ullamco ex commodo.
+              <div className={styles.bottomFirst}>
+                <div className={styles.desc}>
+                  <p>
+                    Qui fugiat labore ut irure ea id. Ut nisi labore deserunt
+                    fugiat ipsum dolor dolore. Ipsum magna incididunt voluptate
+                    duis cillum veniam officia irure sunt occaecat. Esse
+                    incididunt nostrud cupidatat occaecat dolore cupidatat
+                    consectetur et ex aliqua Lorem dolor exercitation dolore.
+                    Enim duis et officia veniam officia. Consequat ullamco
+                    mollit cupidatat deserunt ad ea incididunt eu adipisicing
+                    elit reprehenderit.
+                  </p>
+                  <article>
+                    <details>
+                      <summary>Details</summary>
+                      <p>
+                        {' '}
+                        Qui fugiat labore ut irure ea id. Ut nisi labore
+                        deserunt fugiat ipsum dolor dolore. Ipsum magna
+                        incididunt voluptate duis cillum veniam officia irure
+                        sunt occaecat. Esse incididunt nostrud cupidatat
+                        occaecat dolore cupidatat consectetur et ex aliqua Lorem
+                        dolor exercitation dolore. Enim duis et officia veniam
+                        officia. Consequat ullamco mollit cupidatat deserunt ad
+                        ea incididunt eu adipisicing elit
+                      </p>
+                      reprehenderit.
+                    </details>
+                    <details>
+                      <summary>Details</summary>
+                      Something small enough to escape casual notice.
+                    </details>
+                    <details>
+                      <summary>Details</summary>
+                      Veniam reprehenderit dolor ex aute. Nisi velit nostrud
+                      ullamco mollit anim aute Lorem incididunt cillum deserunt
+                      sint commodo.
+                      <input type='checkbox' />
+                    </details>
+                  </article>
+                </div>
+                <div className={styles.artist}>
+                  <Link to={`/artist/blabla`}>
+                    <img
+                      src='https://images.unsplash.com/photo-1562088287-bde35a1ea917?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                      alt=''
+                    />
+                  </Link>
+
+                  <Link to={`/artist/blabla`}>
+                    <h3>Hayko Cepkin</h3>
+                  </Link>
+                  <div className={styles.rate}>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                    <span>⭐</span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.bottomSecond}>
+                <div className={styles.registration}>
+                  <p>Registration</p>
+                  <hr />
+                  <div className={styles.ticketCount}>
+                    <form action=''>
+                      <button>-</button>
+                      <input type='number' min={0} max={10} defaultValue={1} />
+                      <button>+</button>
+                    </form>
+                  </div>
+                  <div className={styles.buttons}>
+                    <button>Buy Now</button>
+                    <button>Add To Cart</button>
+                  </div>
+                  <div className={styles.information}>
+                    Taxes and fees are included to prices.
+                  </div>
+                  <div className={styles.information}>
+                    Veniam reprehenderit dolor ex aute. Nisi velit nostrud
+                    ullamco mollit anim aute Lorem incididunt cillum deserunt
+                    sint commodo.
+                    <input type='checkbox' />
+                  </div>
+                </div>
+                <div className={styles.map}>
+                  <Map items={[mapItems[3]]} />
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.right}>
@@ -135,7 +172,6 @@ const SingleEvent = () => {
               alt=''
             />
             <span>
-              {' '}
               <svg
                 stroke='currentColor'
                 fill='currentColor'

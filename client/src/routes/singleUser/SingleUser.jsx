@@ -22,6 +22,7 @@ const SingleUser = () => {
               </div>
             </div>
             <div className={styles.userActions}>
+              <p>1234 Followers</p>
               <div className={styles.buttons}>
                 <button>Follow</button>
                 <button>Send Message</button>

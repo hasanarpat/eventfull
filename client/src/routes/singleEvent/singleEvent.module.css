@@ -1,2 +1,194 @@
 .singleEvent {
+  .container {
+    .wrapper {
+      max-width: 1366px;
+      margin: auto;
+      display: flex;
+      align-items: start;
+      gap: 20px;
+      .left {
+        padding-top: 1rem;
+        flex: 3;
+        max-height: calc(100svh - 5rem);
+        overflow-y: scroll;
+        scrollbar-width: 0;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        .top {
+          padding: calc(0.01rem + 12px);
+          padding-bottom: 0px;
+          margin-bottom: 2rem;
+          background-color: var(--background-secondary-color);
+          border-radius: 12px;
+          img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+          }
+          .day {
+            background-color: rgb(189, 186, 186);
+            color: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 12px;
+
+            span {
+              font-size: 22px;
+              border-bottom: 1px solid gray;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+
+              &:first-child {
+                flex: 1;
+              }
+              &:last-child {
+                flex: 2;
+                font-size: 32px;
+                background-color: var(--background-primary-color);
+                color: var(--text-color);
+                border-bottom: none;
+                border-bottom-right-radius: 12px;
+                border-bottom-left-radius: 12px;
+              }
+            }
+          }
+          .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            h3 {
+              font-size: 40px;
+            }
+          }
+
+          .session {
+            font-size: 18px;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          .info {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .date {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              padding: 1rem;
+              .day {
+                width: 4rem;
+                height: 4rem;
+
+                span {
+                  font-size: 14px;
+
+                  &:last-child {
+                    font-size: 18px;
+                  }
+                }
+              }
+              .dateDetails {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+
+            .location {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              padding: 1rem;
+              .locationIcon {
+                background-color: var(--background-primary-color);
+                padding: 1rem;
+                border-radius: 12px;
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              .addresses {
+                display: flex;
+                flex-direction: column;
+              }
+            }
+          }
+
+          .manager {
+            padding: 0.65rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+              border: none;
+              padding: 12px 40px;
+              border-radius: 40px;
+              font-size: 18px;
+              cursor: pointer;
+            }
+          }
+        }
+        .bottom {
+          padding: calc(0.01rem + 12px);
+          background-color: var(--background-secondary-color);
+          border-radius: 12px;
+        }
+      }
+      .right {
+        flex: 2;
+        position: relative;
+        height: calc(100svh - 5rem);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        span {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          z-index: 9;
+          color: red;
+          padding: 1rem;
+          background-color: rgb(245, 243, 243);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.5s ease;
+
+          svg {
+            transition: all 0.5s ease;
+          }
+          &:hover {
+            background-color: red;
+            & > svg {
+              fill: rgb(245, 243, 243);
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -114,6 +114,64 @@
           }
         }
       }
+
+      .categories {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+
+        .filterSearch {
+          form {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            span {
+              font-size: 48px;
+              margin-right: 20px;
+              min-width: fit-content;
+            }
+            svg {
+              width: 32px;
+              height: 32px;
+              margin-right: 8px;
+            }
+            input {
+              min-width: 320px;
+              outline: none;
+              border: none;
+              border-bottom: 1px solid var(--accent-color);
+              background-color: transparent;
+              font-size: 48px;
+              color: var(--primary-color);
+            }
+          }
+        }
+
+        .catalog {
+          .catalogWrapper {
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 30px;
+            a {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              padding: 16px 32px;
+              border: 1px solid var(--text-secondary-color);
+              font-size: 24px;
+              background-color: var(--background-secondary-color);
+              min-width: fit-content;
+
+              svg {
+                width: 2rem;
+                height: 2rem;
+                fill: var(--primary-color);
+              }
+            }
+          }
+        }
+      }
       .rising {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -244,6 +302,13 @@
           width: 90%;
         }
 
+        .categories {
+          .catalog {
+            .catalogWrapper {
+              grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+          }
+        }
         .rising {
           .risingItem {
             &:hover {
@@ -313,6 +378,13 @@
             }
           }
         }
+        .categories {
+          .catalog {
+            .catalogWrapper {
+              grid-template-columns: auto auto;
+            }
+          }
+        }
       }
     }
   }
@@ -331,6 +403,19 @@
               h3 {
                 font-size: 18px;
               }
+            }
+          }
+        }
+        .categories {
+          .filterSearch {
+            form {
+              flex-direction: column;
+              align-items: start;
+            }
+          }
+          .catalog {
+            .catalogWrapper {
+              grid-template-columns: auto;
             }
           }
         }

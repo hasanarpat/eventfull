@@ -28,6 +28,11 @@
       }
     }
 
+    .searchBar {
+      width: 100%;
+      margin-inline: 2rem;
+    }
+
     .center {
       .list {
         ul {
@@ -124,6 +129,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    .container {
+      .searchBar {
+        display: none;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 720px) {
   .navbar {
     .container {

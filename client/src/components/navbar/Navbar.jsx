@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import Switch from '../switch/Switch';
 import { AuthContext } from '../../context/AuthContext';
+import Search from '../search/Search';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -17,6 +18,10 @@ const Navbar = () => {
           <Link to='/'>
             <img src='/assets/logo-dark.jpg' alt='logo' />
           </Link>
+        </div>
+
+        <div className={styles.searchBar}>
+          <Search />
         </div>
 
         <div className={styles.center}>

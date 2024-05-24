@@ -382,3 +382,43 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .singleEvent {
+    .container {
+      .wrapper {
+        flex-direction: column-reverse;
+        .left {
+          .bottom {
+            flex-direction: column;
+
+            .bottomFirst {
+              flex-direction: column;
+              .desc {
+                padding: 1rem;
+              }
+
+              .artist {
+                img {
+                  aspect-ratio: 1/0.5;
+                }
+              }
+            }
+            .bottomSecond {
+              flex-direction: column;
+            }
+          }
+        }
+
+        .right {
+          background-color: red;
+          width: 100%;
+
+          img {
+            aspect-ratio: 3/2;
+          }
+        }
+      }
+    }
+  }
+}

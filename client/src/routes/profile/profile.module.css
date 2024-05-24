@@ -1,2 +1,233 @@
 .profile {
+  .container {
+    .wrapper {
+      max-width: 1566px;
+      margin: auto;
+      display: flex;
+
+      .aside {
+        width: 200px;
+        background-color: var(--background-secondary-color);
+        height: 100%;
+        position: sticky;
+        top: 5rem;
+
+        ul {
+          list-style: none;
+
+          li {
+            padding: 1rem;
+            border-bottom: 1px solid var(--text-secondary-color);
+
+            color: var(--text-secondary-color);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+
+            &:hover {
+              background-color: var(--background-primary-color);
+            }
+
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+
+            span {
+              min-width: fit-content;
+            }
+          }
+        }
+      }
+
+      .info {
+        width: 100%;
+        .top {
+          position: relative;
+          .bannerImg {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 4/0.75;
+            object-fit: cover;
+          }
+
+          .profileDetails {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+              display: flex;
+              align-items: flex-end;
+              justify-content: flex-end;
+              gap: 20px;
+              margin-bottom: 2rem;
+              margin-left: 2rem;
+
+              .img {
+                width: 12rem;
+                height: 12rem;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 12rem;
+                }
+              }
+
+              .leftInfo {
+                height: 12rem;
+                padding: 1rem;
+                color: white;
+                h4 {
+                  font-size: 48px;
+                  margin-bottom: 2rem;
+                }
+                p {
+                  margin-bottom: 2rem;
+                  font-size: 20px;
+                }
+              }
+            }
+
+            .right {
+              padding: 1rem;
+
+              a {
+                button {
+                  padding: 12px 24px;
+                  border-radius: 12px;
+                  border: none;
+                  background-color: var(--accent-color);
+                  color: aliceblue;
+                  font-size: 20px;
+                  cursor: pointer;
+                  transition: all 0.5s ease;
+
+                  &:hover {
+                    background-color: var(--helper-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .center {
+          padding: 1rem;
+        }
+        .bottom {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1566px) {
+  .profile {
+    .container {
+      .wrapper {
+        .info {
+          .top {
+            .bannerImg {
+              aspect-ratio: 4/1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    .container {
+      .wrapper {
+        .aside {
+          width: max-content;
+          ul {
+            li {
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .info {
+          .top {
+            .bannerImg {
+              aspect-ratio: 4/2;
+            }
+
+            .profileDetails {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              .left {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 0rem;
+                margin-left: 0rem;
+
+                .img {
+                  width: 8rem;
+                  height: 8rem;
+
+                  img {
+                    border-radius: 8rem;
+                  }
+                }
+
+                .leftInfo {
+                  height: max-content;
+                  h4 {
+                    margin: 0;
+                  }
+
+                  p {
+                    margin: 0;
+                  }
+
+                  h4,
+                  p {
+                    text-align: center;
+                  }
+                }
+              }
+
+              .right {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    .container {
+      .wrapper {
+        .info {
+          .top {
+            .bannerImg {
+              aspect-ratio: 4/4;
+            }
+          }
+        }
+      }
+    }
+  }
 }

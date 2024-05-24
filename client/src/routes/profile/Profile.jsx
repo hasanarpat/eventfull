@@ -1,14 +1,17 @@
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import styles from './profile.module.css';
 
 const Profile = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const query = searchParams.get('query');
+
   return (
     <section className={styles.profile}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <aside className={styles.aside}>
             <ul>
-              <li>
+              <li onClick={() => setSearchParams({ query: 'profile' })}>
                 <svg
                   stroke='currentColor'
                   fill='currentColor'
@@ -20,7 +23,7 @@ const Profile = () => {
                 </svg>
                 <span>Profile</span>
               </li>
-              <li>
+              <li onClick={() => setSearchParams({ query: 'events' })}>
                 <svg
                   stroke='currentColor'
                   fill='currentColor'
@@ -33,7 +36,7 @@ const Profile = () => {
                 </svg>{' '}
                 <span>Events</span>
               </li>
-              <li>
+              <li onClick={() => setSearchParams({ query: 'savedEvents' })}>
                 <svg
                   stroke='currentColor'
                   fill='currentColor'
@@ -46,7 +49,7 @@ const Profile = () => {
                 </svg>{' '}
                 <span>Saved Events</span>
               </li>
-              <li>
+              <li onClick={() => setSearchParams({ query: 'messages' })}>
                 <svg
                   stroke='currentColor'
                   fill='currentColor'
@@ -60,7 +63,19 @@ const Profile = () => {
                 </svg>
                 <span>Messages</span>
               </li>
-              <li>
+              <li onClick={() => setSearchParams({ query: 'friends' })}>
+                <svg
+                  stroke='currentColor'
+                  fill='currentColor'
+                  strokeWidth='0'
+                  viewBox='0 0 640 512'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path d='M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z'></path>
+                </svg>
+                <span>Friends</span>
+              </li>
+              <li onClick={() => setSearchParams({ query: 'settings' })}>
                 <svg
                   stroke='currentColor'
                   fill='currentColor'
@@ -122,351 +137,362 @@ const Profile = () => {
                 </div>
               </section>
             </article>
-            <article className={styles.center}>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
-              <h1>
-                Lorem est id ex voluptate. Laboris id sunt quis tempor commodo
-                tempor dolor deserunt amet. Aliqua proident commodo sint ad.
-                Laboris enim magna sit quis consectetur deserunt dolore in magna
-                ipsum culpa deserunt. Ipsum ea do culpa ut irure. Non cillum
-                elit ut excepteur. Do proident est eiusmod ullamco ad elit
-                eiusmod deserunt est amet labore magna. Do excepteur aliquip
-                ipsum Lorem eiusmod amet elit consequat occaecat laboris do
-                labore do. Laborum reprehenderit aute aute qui proident commodo
-                magna deserunt occaecat esse do sunt fugiat. Nostrud ex
-                voluptate nulla do labore aute aute. Cupidatat commodo quis qui
-                labore ipsum occaecat pariatur. Veniam minim ex magna mollit ex
-                ullamco. Labore enim incididunt sint id non ullamco nisi. Do do
-                aliqua et enim amet exercitation Lorem fugiat. Veniam duis elit
-                consectetur magna ad voluptate cillum officia consectetur.
-                Consectetur esse duis excepteur amet sit nulla nisi officia
-                consequat sunt incididunt aute. Duis nostrud sint sit non enim
-                occaecat culpa et exercitation elit qui tempor culpa. Est aute
-                culpa laboris mollit aliqua sit esse in eiusmod. Minim aliquip
-                sunt consectetur do aute id Lorem ad. Pariatur dolore ex
-                incididunt ipsum adipisicing reprehenderit duis sint elit
-                excepteur occaecat qui. Et deserunt non enim dolore ut
-                adipisicing duis ea culpa proident aute dolor Lorem. Cupidatat
-                est qui deserunt sit adipisicing. Occaecat esse et in ad
-                adipisicing mollit magna cillum labore veniam culpa nisi. Dolor
-                incididunt enim aute id exercitation nulla qui. Sit voluptate
-                aliqua velit pariatur qui consectetur minim tempor aliqua. Velit
-                laboris qui magna ipsum amet qui officia sit reprehenderit
-                consequat pariatur ad ipsum officia. Aliquip nulla culpa laborum
-                nisi minim dolore est. Nisi nulla in eu nulla eu amet laboris
-                labore cupidatat veniam quis. Ullamco laborum adipisicing esse
-                et exercitation sunt sint ut Lorem. Dolor laborum ad dolore
-                eiusmod dolor magna adipisicing amet excepteur nisi cupidatat.
-                Incididunt fugiat ullamco sint enim reprehenderit laboris ea sit
-                dolor dolore veniam ex aliquip deserunt. Aliqua veniam elit id
-                irure proident incididunt duis occaecat consectetur nulla dolor
-                nostrud consectetur non. Enim adipisicing ex aute sint ea in
-                mollit excepteur tempor do Lorem. In incididunt consequat
-                ullamco elit Lorem aliquip ad non officia dolor anim sit. Dolor
-                amet eiusmod sit cillum ex est est quis nulla sint adipisicing
-                fugiat. Ullamco laborum laborum esse Lorem ipsum sit. Nisi elit
-                adipisicing eiusmod quis culpa dolor esse culpa deserunt est
-                tempor minim reprehenderit. Mollit ullamco et enim ullamco amet.
-                Reprehenderit culpa cillum culpa ullamco ea id sit excepteur.
-                Laborum do tempor in culpa in dolore labore commodo dolor dolor
-                aliquip fugiat. Exercitation in aliquip laborum cupidatat est ut
-                proident mollit quis velit. Incididunt nulla irure exercitation
-                aliqua qui ex minim proident. Culpa ullamco adipisicing id
-                excepteur proident. Qui anim mollit consequat dolore aliqua
-                dolore ea officia minim ut cupidatat veniam Lorem. Dolore labore
-                cupidatat aliquip eiusmod ea culpa exercitation sit et eiusmod
-                nulla eu ex. Dolor aliquip exercitation sit ea ipsum aute
-                consectetur. Consectetur non dolor adipisicing eu amet ut
-                adipisicing officia cillum anim. In minim eu amet nulla ullamco
-                aute exercitation enim. Qui sit fugiat do est id anim officia ex
-                aute elit officia commodo commodo.
-              </h1>
+            <article className={styles.bottom}>
+              <div
+                className={styles.profileContent}
+                style={
+                  query === null || query === 'profile'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                <div className={styles.friends}>
+                  <ul>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className={styles.createEvent}>
+                  <button>
+                    <svg
+                      stroke='currentColor'
+                      fill='currentColor'
+                      strokeWidth='0'
+                      viewBox='0 0 512 512'
+                      height='1em'
+                      width='1em'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        fill='none'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                        strokeWidth='32'
+                        d='M384 224v184a40 40 0 0 1-40 40H104a40 40 0 0 1-40-40V168a40 40 0 0 1 40-40h167.48'
+                      ></path>
+                      <path d='M459.94 53.25a16.06 16.06 0 0 0-23.22-.56L424.35 65a8 8 0 0 0 0 11.31l11.34 11.32a8 8 0 0 0 11.34 0l12.06-12c6.1-6.09 6.67-16.01.85-22.38zM399.34 90 218.82 270.2a9 9 0 0 0-2.31 3.93L208.16 299a3.91 3.91 0 0 0 4.86 4.86l24.85-8.35a9 9 0 0 0 3.93-2.31L422 112.66a9 9 0 0 0 0-12.66l-9.95-10a9 9 0 0 0-12.71 0z'></path>
+                    </svg>
+                    <span>Create New Event</span>
+                  </button>
+                </div>
+              </div>
+              <div
+                className={styles.eventsContent}
+                style={
+                  query === 'events'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                Events
+              </div>
+              <div
+                className={styles.savedEventsContent}
+                style={
+                  query === 'savedEvents'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                Saved Events
+              </div>
+              <div
+                className={styles.messagesContent}
+                style={
+                  query === 'friends'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                <div className={styles.friends}>
+                  <ul>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to={`/user/blabla`}>
+                        <span>Mahmut</span>
+                        <img
+                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                          alt=''
+                        />
+                        <button>Message</button>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                className={styles.messagesContent}
+                style={
+                  query === 'messages'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                Messages
+              </div>
+              <div
+                className={styles.settingsContent}
+                style={
+                  query === 'settings'
+                    ? {
+                        display: 'flex',
+                      }
+                    : {
+                        display: 'none',
+                      }
+                }
+              >
+                Settings
+              </div>
             </article>
-            <article className={styles.bottom}></article>
           </div>
         </div>
       </div>

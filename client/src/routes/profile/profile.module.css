@@ -45,6 +45,7 @@
         width: 100%;
         .top {
           position: relative;
+          padding-left: 1rem;
           .bannerImg {
             width: 100%;
             height: 100%;
@@ -120,11 +121,107 @@
             }
           }
         }
-        .center {
-          padding: 1rem;
-        }
         .bottom {
           padding: 1rem;
+          .friends {
+            flex: 3;
+            background-color: var(--background-secondary-color);
+            border-radius: 12px;
+            padding: calc(12px + 0.1rem);
+            max-height: 420px;
+            overflow-y: scroll;
+            scrollbar-width: 0;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+
+            &:hover {
+              background-color: var(--background-dark-color);
+            }
+
+            ul {
+              list-style: none;
+
+              li {
+                &:hover {
+                  background-color: var(--background-primary-color);
+                }
+
+                a {
+                  padding: 1rem;
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  span {
+                    font-size: 20px;
+                  }
+                  img {
+                    width: 48px;
+                    height: 48px;
+                    object-fit: cover;
+                    border-radius: 48px;
+                  }
+
+                  button {
+                    margin-left: 2rem;
+                    padding: 12px 32px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 18px;
+                    border-radius: 32px;
+                  }
+                }
+              }
+            }
+          }
+
+          .profileContent {
+            display: flex;
+            gap: 30px;
+
+            .createEvent {
+              flex: 1;
+              background-color: var(--background-secondary-color);
+              border-radius: 12px;
+              padding: calc(12px + 0.1rem);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &:hover {
+                background-color: var(--background-dark-color);
+              }
+
+              button {
+                padding: 16px 32px;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                font-size: 20px;
+                border-radius: 2rem;
+                cursor: pointer;
+                span {
+                  min-width: fit-content;
+                }
+                svg {
+                  width: 2rem;
+                  height: 2rem;
+                }
+              }
+            }
+          }
+          .eventsContent {
+          }
+          .savedEventsContent {
+          }
+          .messagesContent {
+          }
+          .settingsContent {
+          }
         }
       }
     }
@@ -139,6 +236,18 @@
           .top {
             .bannerImg {
               aspect-ratio: 4/1;
+            }
+          }
+
+          .bottom {
+            .profileContent {
+              .friends {
+                flex: 2;
+              }
+
+              .createEvent {
+                flex: 2;
+              }
             }
           }
         }
@@ -222,8 +331,25 @@
       .wrapper {
         .info {
           .top {
+            padding-left: 0;
             .bannerImg {
               aspect-ratio: 4/4;
+            }
+          }
+
+          .bottom {
+            .friends {
+              ul {
+                li {
+                  a {
+                    width: 100%;
+                    gap: 50px;
+                  }
+                }
+              }
+            }
+            .profileContent {
+              flex-direction: column-reverse;
             }
           }
         }

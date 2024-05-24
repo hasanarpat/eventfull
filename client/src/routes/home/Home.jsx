@@ -69,7 +69,7 @@ const Home = () => {
             </div>
             <div className={styles.catalog}>
               <div className={styles.catalogWrapper}>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=music`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -81,7 +81,7 @@ const Home = () => {
                   </svg>
                   Music
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=performing`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -93,7 +93,7 @@ const Home = () => {
                   </svg>
                   Performing & Visual Arts
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=holiday`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -105,7 +105,7 @@ const Home = () => {
                   </svg>
                   Holiday
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=health`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -117,7 +117,7 @@ const Home = () => {
                   </svg>
                   Health
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=hobbies`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -129,7 +129,7 @@ const Home = () => {
                   </svg>
                   Hobbies
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=business`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -141,7 +141,7 @@ const Home = () => {
                   </svg>
                   Business
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=food`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -153,7 +153,7 @@ const Home = () => {
                   </svg>
                   Food & Drink
                 </Link>
-                <Link to={`/blabla`}>
+                <Link to={`/search?categories=sports`}>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'

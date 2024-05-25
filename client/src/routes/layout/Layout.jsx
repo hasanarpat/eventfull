@@ -24,7 +24,7 @@ const Layout = () => {
 const RequireAuth = () => {
   const { currentUser } = useContext(AuthContext);
 
-  return currentUser ? (
+  return !currentUser ? (
     <Navigate to='/login' />
   ) : (
     <main className={styles.layout}>

@@ -1,5 +1,7 @@
 import { Link, useSearchParams } from 'react-router-dom';
 import styles from './profile.module.css';
+import EditEventCard from '../../components/event/editEventCard/EditEventCard';
+import EventCard from '../../components/event/eventCard/EventCard';
 
 const Profile = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -311,7 +313,17 @@ const Profile = () => {
                       }
                 }
               >
-                Events
+                <div className={styles.userEvents}>
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                  <EditEventCard />
+                </div>
+                <button className={styles.loadMore}>See More</button>
               </div>
               <div
                 className={styles.savedEventsContent}
@@ -325,7 +337,13 @@ const Profile = () => {
                       }
                 }
               >
-                Saved Events
+                <div className={styles.userEvents}>
+                  <EventCard />
+                  <EventCard />
+                  <EventCard />
+                  <EventCard />
+                </div>
+                <button className={styles.loadMore}>See More</button>
               </div>
               <div
                 className={styles.messagesContent}

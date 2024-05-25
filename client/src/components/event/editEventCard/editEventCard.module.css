@@ -1,0 +1,53 @@
+.editEventCard {
+  background-color: var(--background-secondary-color);
+  padding: 12px;
+  color: var(--text-color);
+  max-width: 320px;
+  width: 100%;
+  border-radius: 24px;
+
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 12px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  h5 {
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 12px;
+  }
+
+  p {
+    font-size: 16px;
+    padding-left: 12px;
+    margin-bottom: 1rem;
+    &:first-of-type {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  a {
+    display: block;
+
+    button {
+      width: 100%;
+      border: none;
+      padding: 12px 32px;
+      cursor: pointer;
+      border-radius: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .eventCard {
+    max-width: 100%;
+  }
+}

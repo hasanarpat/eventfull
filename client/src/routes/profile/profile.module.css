@@ -263,6 +263,53 @@
             flex-direction: column;
           }
           .messagesContent {
+            .messages {
+              width: 100%;
+              ul {
+                list-style: none;
+                li {
+                  background-color: var(--background-secondary-color);
+                  padding: 0.5rem 1.5rem;
+                  transition: all 0.5sd ease;
+
+                  &:hover {
+                    background-color: var(--background-primary-color);
+                  }
+
+                  a {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    width: 100%;
+                    .userInfo {
+                      display: flex;
+                      align-items: center;
+                      gap: 20px;
+                      color: white;
+                    }
+
+                    .lastMessage {
+                      display: flex;
+                      align-items: center;
+                      gap: 1rem;
+
+                      span {
+                        font-size: 14px;
+                        background-color: var(--accent-color);
+                        padding: 0.5rem;
+                        color: white;
+                        border-radius: 0.5rem;
+                      }
+                    }
+                  }
+                }
+                img {
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+                }
+              }
+            }
           }
           .settingsContent {
           }

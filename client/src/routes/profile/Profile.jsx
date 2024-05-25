@@ -366,7 +366,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -376,7 +379,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -386,7 +392,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -396,7 +405,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -406,7 +418,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -416,7 +431,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -426,7 +444,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -436,7 +457,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -446,7 +470,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -456,7 +483,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -466,7 +496,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                     <li>
@@ -476,7 +509,10 @@ const Profile = () => {
                           src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
                           alt=''
                         />
-                        <button>Message</button>
+                        <div className={styles.button}>
+                          <button>Message</button>
+                          <button>Remove Friend</button>
+                        </div>
                       </Link>
                     </li>
                   </ul>

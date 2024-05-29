@@ -1,2 +1,124 @@
 .profileUpdate {
+  .container {
+    .wrapper {
+      height: calc(100svh - 5rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 6rem;
+      gap: 2rem;
+      .top {
+        p {
+          font-size: 24px;
+        }
+      }
+
+      .bottom {
+        form {
+          .imgInput {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+
+            .avatar {
+              width: 7rem;
+              height: 7rem;
+              border-radius: 50%;
+              background-color: var(--accent-color);
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 7rem;
+            }
+
+            article {
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+
+              label {
+                font-size: 14px;
+              }
+
+              div {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                input {
+                  border: 1px solid var(--helper-color);
+                  padding: 1rem;
+                  border-radius: 0.5rem;
+                }
+
+                button {
+                  padding: 18px 32px;
+                  border: 1px solid var(--helper-color);
+                  border-radius: 0.5rem;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .formItem {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            label {
+              font-size: 1.75rem;
+              margin-bottom: 0.5rem;
+            }
+
+            input {
+              font-size: 1.5rem;
+            }
+          }
+
+          button[type='submit'] {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 14px 32px;
+            font-size: 24px;
+            background-color: var(--helper-color);
+            cursor: pointer;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .profileUpdate {
+    .container {
+      .wrapper {
+        .bottom {
+          width: 100%;
+          form {
+            padding: 1rem;
+            .imgInput {
+              align-items: center;
+              width: 100%;
+
+              div {
+                button,
+                input {
+                  padding: 4px 12px;
+                }
+              }
+              .avatar {
+                width: 4rem;
+                height: 4rem;
+                font-size: 4rem;
+                min-width: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

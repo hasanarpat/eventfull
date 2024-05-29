@@ -158,12 +158,21 @@
                   padding: 1rem;
                   display: flex;
                   align-items: center;
+                  justify-content: space-between;
                   gap: 20px;
+
+                  div {
+                    &:first-child {
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                    }
+                  }
+
                   .button {
                     display: flex;
                     align-items: center;
                     gap: 10px;
-
                     button {
                       &:last-child {
                         background-color: orange;
@@ -271,6 +280,7 @@
                   background-color: var(--background-secondary-color);
                   padding: 0.5rem 1.5rem;
                   transition: all 0.5sd ease;
+                  margin-bottom: 0.5em;
 
                   &:hover {
                     background-color: var(--background-primary-color);
@@ -286,6 +296,7 @@
                       align-items: center;
                       gap: 20px;
                       color: white;
+                      font-size: 24px;
                     }
 
                     .lastMessage {
@@ -299,6 +310,11 @@
                         padding: 0.5rem;
                         color: white;
                         border-radius: 0.5rem;
+                        min-width: fit-content;
+                      }
+
+                      p {
+                        font-size: 14px;
                       }
                     }
                   }
@@ -435,6 +451,9 @@
           }
 
           .bottom {
+            padding: 0;
+            margin-left: 0;
+            margin-bottom: 1em;
             .friends {
               ul {
                 li {

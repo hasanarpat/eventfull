@@ -156,121 +156,145 @@ const Profile = () => {
                   <ul>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <span>Mahmut</span>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <button>Message</button>
                       </Link>
                     </li>
@@ -361,11 +385,13 @@ const Profile = () => {
                   <ul>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -374,11 +400,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -387,11 +415,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -400,11 +430,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -413,11 +445,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -426,11 +460,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -439,11 +475,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -452,11 +490,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -465,11 +505,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -478,11 +520,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -491,11 +535,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>
@@ -504,11 +550,13 @@ const Profile = () => {
                     </li>
                     <li>
                       <Link to={`/user/blabla`}>
-                        <img
-                          src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
-                          alt=''
-                        />
-                        <span>Mahmut</span>
+                        <div>
+                          <span>Mahmut</span>
+                          <img
+                            src='https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load'
+                            alt=''
+                          />
+                        </div>
                         <div className={styles.button}>
                           <button>Message</button>
                           <button>Remove Friend</button>

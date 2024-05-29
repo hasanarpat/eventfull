@@ -253,6 +253,8 @@ const T = () => {
             {id !== undefined ? (
               <main className={styles.chat}>
                 <section className={styles.chats}>
+                  <hr style={{ marginTop: '1rem', marginBottom: '0.5rem' }} />
+                  <p className={styles.date}>From 12/06</p>
                   <div className={styles.chatMessage}>
                     <div className={styles.avatar}>
                       <img
@@ -301,6 +303,8 @@ const T = () => {
                       </p>
                     </div>
                   </div>
+                  <hr style={{ marginTop: '1rem', marginBottom: '0.5rem' }} />
+                  <p className={styles.date}>From 16/06</p>
                   <div className={styles.userChatMessage}>
                     <div className={styles.avatar}>
                       <img

@@ -126,6 +126,12 @@
           .chats {
             padding: 1rem;
 
+            .date {
+              margin-top: 1rem;
+              font-size: 24px;
+              text-align: center;
+            }
+
             .chatMessage,
             .userChatMessage {
               width: 70%;

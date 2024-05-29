@@ -16,6 +16,7 @@ import Arenas from './routes/arenas/Arenas';
 import Events from './routes/events/Events';
 import Users from './routes/users/Users';
 import EditPost from './routes/editPost/EditPost';
+import T from './routes/t/T';
 
 function App() {
   const router = createBrowserRouter([
@@ -92,6 +93,14 @@ function App() {
         {
           path: '/event/edit/:id',
           element: <EditPost />,
+        },
+        {
+          path: '/t',
+          element: <T />,
+        },
+        {
+          path: '/t/:id',
+          element: <T />,
         },
       ],
     },

@@ -1,0 +1,254 @@
+.t {
+  .container {
+    .wrapper {
+      display: flex;
+      background-image: url(https://images.pexels.com/photos/17180127/pexels-photo-17180127/free-photo-of-dag.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-size: cover;
+      .left {
+        max-height: calc(100svh - 5rem);
+        overflow-y: scroll;
+        max-width: 24rem;
+        background-color: var(--background-secondary-color);
+
+        .user {
+          a {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .userInfo {
+              .userDetails {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                span {
+                  &:first-child {
+                    font-size: 24px;
+                  }
+                }
+              }
+              p {
+                margin-top: 8px;
+                &:first-of-type {
+                  font-size: 14px;
+                }
+
+                &:last-of-type {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+          border-bottom: 5px solid var(--background-secondary-color);
+        }
+
+        .avatar {
+          img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          gap: 30px;
+          padding: 1rem;
+
+          li {
+            a {
+              display: flex;
+              align-items: stretch;
+              gap: 1rem;
+
+              .userInfo {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .messageDetails {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  span {
+                    &:first-child {
+                      font-size: 22px;
+                    }
+                  }
+                }
+
+                p {
+                  font-size: 14px;
+                  line-height: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .messages {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        .welcomeMessages {
+          p {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 32px;
+          }
+        }
+
+        .chat {
+          width: 100%;
+          height: 100%;
+          max-height: calc(100svh - 5rem);
+          overflow-y: scroll;
+          scrollbar-width: 0;
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+          position: relative;
+
+          .chats {
+            padding: 1rem;
+
+            .chatMessage,
+            .userChatMessage {
+              width: 70%;
+              height: auto;
+              display: flex;
+              gap: 10px;
+              background-color: #fff;
+              margin-top: 0.5em;
+              padding: 0.25rem 0.75rem;
+              border-radius: 12px;
+
+              .userInfo {
+                width: 100%;
+                .messageDetails {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  span {
+                    color: rgba(128, 128, 128, 0.74);
+                    &:first-child {
+                      font-size: 20px;
+                    }
+                  }
+                }
+
+                p {
+                  color: rgba(0, 0, 0, 0.595);
+                }
+              }
+
+              .avatar {
+                img {
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                }
+              }
+            }
+
+            .userChatMessage {
+              background-color: rgba(0, 255, 200, 0.812);
+              margin-left: auto;
+            }
+          }
+
+          .bottom {
+            background-color: rgba(0, 128, 128, 0.342);
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .attachments {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+
+              svg,
+              span {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                fill: white;
+
+                &:hover {
+                  transform: scale(1.1);
+                }
+              }
+
+              span {
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+
+            form {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              textarea {
+                width: 100%;
+                max-height: 80px;
+                resize: none;
+                overflow-y: scroll;
+                outline: none;
+                border-radius: 24px;
+                padding: 0.5em 1em;
+                scrollbar-width: 0;
+                &::-webkit-scrollbar {
+                  display: none;
+                }
+                -ms-overflow-style: none; /* IE and Edge */
+                scrollbar-width: none; /* Firefox */
+              }
+
+              button {
+                cursor: pointer;
+                padding: 12px 32px;
+                font-size: 18px;
+                background-color: var(--accent-color);
+                color: white;
+                border: none;
+                border-radius: 12px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                  background-color: rgba(12, 170, 170, 1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

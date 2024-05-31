@@ -1,5 +1,9 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import styles from './search.module.css';
+import Events from '../../components/event/events/Events';
+import Artists from '../../components/artists/Artists';
+import Arenas from '../../components/arenas/Arenas';
+import Users from '../../components/users/Users';
 
 const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -196,10 +200,22 @@ const Search = () => {
                   </ul>
                 </div>
               </div>
-              <div className={styles.events}>Events</div>
-              <div className={styles.artist}>Artists</div>
-              <div className={styles.arenas}>Arenas</div>
-              <div className={styles.users}>Users</div>
+              <h3>Events</h3>
+              <div className={styles.events}>
+                <Events />
+              </div>
+              <h3>Artists</h3>
+              <div className={styles.artist}>
+                <Artists />
+              </div>
+              <h3>Arenas</h3>
+              <div className={styles.arenas}>
+                <Arenas />
+              </div>
+              <h3>Users</h3>
+              <div className={styles.users}>
+                <Users />
+              </div>
             </section>
           )}
         </div>

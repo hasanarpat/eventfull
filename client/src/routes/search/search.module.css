@@ -1,2 +1,176 @@
 .search {
+  .container {
+    .wrapper {
+      .upsEmpty {
+        min-height: calc(100svh - 5rem);
+        display: grid;
+        place-items: center;
+
+        img {
+          aspect-ratio: 4/3;
+          height: 700px;
+          object-fit: cover;
+        }
+
+        p {
+          &:first-of-type {
+            font-size: 32px;
+          }
+          line-height: 0;
+        }
+
+        button {
+          cursor: pointer;
+          background-color: var(--helper-color);
+          color: black;
+          font-size: 20px;
+          padding: 12px 32px;
+          border: none;
+        }
+      }
+
+      .searchResults {
+        max-width: 90%;
+        margin-inline: auto;
+        padding: 1rem 0;
+
+        ul {
+          list-style: none;
+        }
+
+        button {
+          cursor: pointer;
+        }
+
+        .filterSection {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          border: 1px solid var(--text-color);
+          border-radius: 8px;
+          margin-bottom: 2rem;
+
+          form {
+            display: flex;
+            align-items: center;
+
+            .filterHeading {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+
+              span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                svg {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+
+              span {
+                font-size: 20px;
+              }
+            }
+            label {
+              margin-left: 24px;
+              margin-right: 8px;
+            }
+
+            select {
+              border: none;
+              padding: 6px 12px;
+              border-radius: 8px;
+              font-size: 18px;
+            }
+          }
+
+          .filteredObjects {
+            ul {
+              display: flex;
+              gap: 30px;
+
+              li {
+                button {
+                  border: none;
+                  border-radius: 12px;
+                  padding: 12px;
+                  display: flex;
+                  align-items: stretch;
+                  gap: 12px;
+
+                  span {
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+
+          .resultTypes {
+            ul {
+              display: flex;
+              align-items: center;
+              gap: 30px;
+
+              li {
+                a {
+                  button {
+                    border: none;
+                    padding: 12px 24px;
+                    font-size: 18px;
+                    border-radius: 12px;
+                  }
+
+                  button[data-target='selected'] {
+                    background-color: var(--helper-color);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .search {
+    .container {
+      .wrapper {
+        .upsEmpty {
+          img {
+            height: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    .container {
+      .wrapper {
+        .upsEmpty {
+          img {
+            height: 320px;
+          }
+
+          p {
+            line-height: normal;
+            text-align: center;
+            padding-inline: 1rem;
+          }
+        }
+      }
+    }
+  }
 }

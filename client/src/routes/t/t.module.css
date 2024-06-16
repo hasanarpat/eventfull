@@ -134,13 +134,15 @@
 
             .chatMessage,
             .userChatMessage {
-              width: 70%;
+              width: 55%;
               height: auto;
               display: flex;
+              align-items: stretch;
               gap: 10px;
-              background-color: #fff;
+              background-color: var(--background-primary-color);
+              color: var(--text-color);
               margin-top: 0.5em;
-              padding: 0.25rem 0.75rem;
+              padding: 0.5rem 0.75rem;
               border-radius: 12px;
 
               .userInfo {
@@ -150,6 +152,7 @@
                   display: flex;
                   align-items: center;
                   justify-content: space-between;
+                  margin-bottom: 0.25rem;
 
                   span {
                     color: rgba(128, 128, 128, 0.74);
@@ -160,7 +163,8 @@
                 }
 
                 p {
-                  color: rgba(0, 0, 0, 0.595);
+                  color: var(--text-color);
+                  font-size: 18px;
                 }
               }
 
@@ -175,13 +179,13 @@
             }
 
             .userChatMessage {
-              background-color: rgba(0, 255, 200, 0.812);
+              background-color: var(--helper-color);
               margin-left: auto;
             }
           }
 
           .bottom {
-            background-color: rgba(0, 128, 128, 0.342);
+            background-color: hsla(0, 0%, 0%, 0.363);
             position: sticky;
             bottom: 0;
             width: 100%;

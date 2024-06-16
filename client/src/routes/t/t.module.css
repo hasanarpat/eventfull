@@ -179,7 +179,7 @@
             }
 
             .userChatMessage {
-              background-color: var(--helper-color);
+              background-color: var(--accent-color);
               margin-left: auto;
             }
           }

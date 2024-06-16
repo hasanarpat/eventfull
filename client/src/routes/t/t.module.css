@@ -155,7 +155,7 @@
                   margin-bottom: 0.25rem;
 
                   span {
-                    color: rgba(128, 128, 128, 0.74);
+                    color: var(--primary-color);
                     &:first-child {
                       font-size: 20px;
                     }

@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import styles from './users.module.css';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import styles from "./users.module.css";
+import { Link } from "react-router-dom";
 
 const Users = () => {
   const [users, setUsers] = useState(false);
@@ -22,11 +22,11 @@ const Users = () => {
             <div className={styles.search}>
               <form onSubmit={handleSubmit}>
                 <input
-                  type='text'
+                  type="text"
                   onChange={handleSearch}
-                  placeholder='Search users to add friend and see their profile'
+                  placeholder="Search users to add friend and see their profile"
                 />
-                <button type='submit'>🔍</button>
+                <button type="submit">🔍</button>
               </form>
             </div>
           </div>
@@ -37,13 +37,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -52,13 +52,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -67,13 +67,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -82,13 +82,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -97,13 +97,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -112,13 +112,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -127,13 +127,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -142,13 +142,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -157,13 +157,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>
@@ -172,13 +172,13 @@ const Users = () => {
                   <div to={`blabla`}>
                     <div className={styles.userInfo}>
                       <img
-                        src='https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-                        alt='user avatar'
+                        src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?q=80&w=2762&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="user avatar"
                       />
                       <h6>John Doe</h6>
                     </div>
                     <div className={styles.buttons}>
-                      <Link to={`user/123`}>Visit Profile</Link>
+                      <Link to={`/user/123`}>Visit Profile</Link>
                       <button>Add Friend</button>
                     </div>
                   </div>

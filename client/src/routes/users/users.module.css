@@ -43,6 +43,7 @@
                 0 0 8px rgba(23, 181, 229, 0.6);
               border-radius: 12px;
               font-size: 32px;
+              cursor: pointer;
             }
           }
         }
@@ -53,16 +54,16 @@
         display: grid;
         place-items: center;
         padding: 0rem 5rem;
+        overflow-y: scroll;
+        max-height: 60svh;
+        scrollbar-width: 0;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
 
         .userList {
-          overflow-y: scroll;
-          max-height: 60svh;
-          scrollbar-width: 0;
-          &::-webkit-scrollbar {
-            display: none;
-          }
-          -ms-overflow-style: none; /* IE and Edge */
-          scrollbar-width: none; /* Firefox */
           width: 100%;
           max-width: 1024px;
           list-style: none;

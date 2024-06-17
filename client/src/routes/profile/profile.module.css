@@ -307,6 +307,18 @@
                       gap: 20px;
                       color: white;
                       font-size: 24px;
+                      margin-bottom: 0.5rem;
+
+                      span {
+                        &:last-of-type {
+                          font-size: 14px;
+                          background-color: var(--accent-color);
+                          padding: 0.5rem;
+                          color: white;
+                          border-radius: 0.5rem;
+                          min-width: fit-content;
+                        }
+                      }
                     }
 
                     .lastMessage {
@@ -314,17 +326,10 @@
                       align-items: center;
                       gap: 1rem;
 
-                      span {
-                        font-size: 14px;
-                        background-color: var(--accent-color);
-                        padding: 0.5rem;
-                        color: white;
-                        border-radius: 0.5rem;
-                        min-width: fit-content;
-                      }
-
                       p {
                         font-size: 14px;
+                        margin-left: 3rem;
+                        text-align: justify;
                       }
                     }
                   }

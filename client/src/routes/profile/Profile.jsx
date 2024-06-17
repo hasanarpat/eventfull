@@ -581,16 +581,16 @@ const Profile = () => {
                 <div className={styles.messages}>
                   <ul>
                     <li>
-                      <Link to={`/messages/blabla`}>
+                      <Link to={`/t/blabla`}>
                         <div className={styles.userInfo}>
                           <img
                             src="https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                             alt=""
                           />
                           <span>Mahmut</span>
+                          <span>20:27, Thu</span>
                         </div>
                         <div className={styles.lastMessage}>
-                          <span>20:27, Thu</span>
                           <p>
                             Last message from friend Consequat magna cillum
                             minim id occaecat mollit sit ex sint amet. Est nulla
@@ -602,37 +602,46 @@ const Profile = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to={`/messages/blabla`}>
+                      <Link to={`/t/blabla`}>
                         <div className={styles.userInfo}>
                           <img
                             src="https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                             alt=""
                           />
                           <span>Mahmut</span>
+                          <span>20:27, Thu</span>
                         </div>
                         <div className={styles.lastMessage}>
-                          <span>20:27, Thu</span>
                           <p>
                             Last message from friend Consequat magna cillum
                             minim id occaecat mollit sit ex sint amet. Est nulla
                             commodo voluptate sint mollit sit officia fugiat ex
                             sunt eiusmod proident magna quis. Id culpa
-                            incididunt dolor ut.
+                            incididunt dolor ut. Last message from friend
+                            Consequat magna cillum minim id occaecat mollit sit
+                            ex sint amet. Est nulla commodo voluptate sint
+                            mollit sit officia fugiat ex sunt eiusmod proident
+                            magna quis. Id culpa incididunt dolor ut. Last
+                            message from friend Consequat magna cillum minim id
+                            occaecat mollit sit ex sint amet. Est nulla commodo
+                            voluptate sint mollit sit officia fugiat ex sunt
+                            eiusmod proident magna quis. Id culpa incididunt
+                            dolor ut.
                           </p>
                         </div>
                       </Link>
                     </li>
                     <li>
-                      <Link to={`/messages/blabla`}>
+                      <Link to={`/t/blabla`}>
                         <div className={styles.userInfo}>
                           <img
                             src="https://images.pexels.com/photos/18208718/pexels-photo-18208718/free-photo-of-kadin-ayakta-portre-modu-portre.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
                             alt=""
                           />
                           <span>Mahmut</span>
+                          <span>20:27, Thu</span>
                         </div>
                         <div className={styles.lastMessage}>
-                          <span>20:27, Thu</span>
                           <p>
                             Last message from friend Consequat magna cillum
                             minim id occaecat mollit sit ex sint amet. Est nulla

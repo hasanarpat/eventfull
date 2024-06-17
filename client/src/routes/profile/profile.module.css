@@ -193,12 +193,22 @@
                     border-radius: 48px;
                   }
 
-                  button {
+                  button,
+                  a {
                     padding: 12px 32px;
                     border: none;
                     cursor: pointer;
                     font-size: 18px;
                     border-radius: 32px;
+                  }
+                  a {
+                    background-color: var(--text-secondary-color);
+                    color: white;
+                    transition: all 0.5s ease;
+                    &:hover {
+                      background-color: #fff;
+                      color: var(--background-primary-color);
+                    }
                   }
                 }
               }

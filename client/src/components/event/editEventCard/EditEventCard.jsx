@@ -26,8 +26,6 @@ const EditEventCard = () => {
         Date & Time
       </p>
       <p>Wednesday 28th February at 15:00</p>
-
-      <p style={{ textAlign: "center" }}>You are the author of this event</p>
       <Link to={`/event/edit/1241431`}>
         <button>Edit Event Details</button>
       </Link>

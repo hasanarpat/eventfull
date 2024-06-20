@@ -56,6 +56,39 @@
           margin-bottom: 1rem;
         }
         .middle {
+          min-height: 60svh;
+
+          .eventImages {
+            display: flex;
+            gap: 12px;
+
+            img {
+              width: 240px;
+              aspect-ratio: 16/9;
+            }
+
+            .img {
+              position: relative;
+              button {
+                display: none;
+                cursor: pointer;
+                border: none;
+                font-size: 18px;
+                padding: 0.25rem 0.55rem;
+                border-radius: 50%;
+              }
+
+              &:hover {
+                button {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                }
+              }
+            }
+          }
+
           .formItem {
             display: flex;
             flex-direction: column;

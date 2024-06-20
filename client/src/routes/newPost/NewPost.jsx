@@ -107,6 +107,22 @@ const DetailsForm = () => (
       <label htmlFor="eventFile">Event Images</label>
       <input type="file" id="eventFile" />
     </div>
+    <div className={styles.eventImages}>
+      <div className={styles.img}>
+        <img
+          src="https://images.unsplash.com/photo-1718792679559-5cfd607bb564?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <button>X</button>
+      </div>
+      <div className={styles.img}>
+        <img
+          src="https://images.unsplash.com/photo-1718792679559-5cfd607bb564?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0OHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <button>X</button>
+      </div>
+    </div>
     <div className={styles.formItem}>
       <label htmlFor="eventAddress">Event Address</label>
       <input

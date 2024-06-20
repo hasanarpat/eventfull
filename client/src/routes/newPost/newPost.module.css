@@ -1,2 +1,94 @@
 .newPost {
+  padding: 2rem;
+
+  .container {
+    padding-inline: 4rem;
+    .wrapper {
+      display: flex;
+      gap: 50px;
+
+      .left {
+        flex: 2;
+
+        ul {
+          list-style: none;
+
+          li {
+            margin-bottom: 0.2rem;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            border-radius: 8px;
+
+            span {
+              &:first-child {
+                padding: 0 0.5rem;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+
+          .active {
+            background-color: var(--background-secondary-color);
+            color: var(--accent-color);
+
+            span {
+              &:first-child {
+                background-color: #fff;
+                border-radius: 50%;
+                border: 1px solid var(--accent-color);
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        flex: 10;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .newPost {
+    .container {
+      padding-inline: 1rem;
+      .wrapper {
+        flex-direction: column;
+        .left {
+          ul {
+            li {
+              &:not(.active) {
+                display: none;
+              }
+            }
+          }
+        }
+        .right {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .newPost {
+    padding: 1rem;
+    .container {
+      padding-inline: 0.25rem;
+      .wrapper {
+        .left {
+        }
+        .right {
+        }
+      }
+    }
+  }
 }

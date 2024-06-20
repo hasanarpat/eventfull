@@ -100,8 +100,8 @@ const DetailsForm = () => (
     </div>
     <div className={styles.formItem}>
       <label htmlFor="eventTime">Event Times - Hours</label>
-      <input type="number" id="eventTime" min={1} />
-      <input type="number" id="eventTime" min={1} />
+      <input type="number" placeholder="start time" id="eventTime" min={1} />
+      <input type="number" placeholder="finish time" id="eventTime" min={1} />
     </div>
     <div className={styles.formItem}>
       <label htmlFor="eventFile">Event Images</label>
@@ -109,11 +109,15 @@ const DetailsForm = () => (
     </div>
     <div className={styles.formItem}>
       <label htmlFor="eventAddress">Event Address</label>
-      <input type="text" id="eventAddress" />
+      <input
+        type="text"
+        placeholder="St. Joseph Str. No 12"
+        id="eventAddress"
+      />
     </div>
     <div className={styles.formItem}>
       <label htmlFor="eventCity">Event City</label>
-      <input type="text" id="eventCity" />
+      <input type="text" placeholder="Moscow" id="eventCity" />
     </div>
   </form>
 );

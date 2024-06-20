@@ -51,6 +51,62 @@
 
       .right {
         flex: 10;
+
+        .top {
+          margin-bottom: 1rem;
+        }
+        .middle {
+          .formItem {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 1rem;
+
+            input,
+            textarea {
+              padding: 0.5rem;
+              border-radius: 0.5rem;
+              border: none;
+            }
+
+            textarea {
+              max-width: 100%;
+              min-width: 100%;
+              min-height: 100px;
+            }
+          }
+        }
+
+        .bottom {
+          .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+
+            button {
+              min-width: 120px;
+              padding: 0.5rem 0;
+              border: none;
+              cursor: pointer;
+              border-radius: 12px;
+              color: white;
+              font-size: 18px;
+
+              &:hover {
+                opacity: 0.9;
+              }
+
+              &:first-child {
+                background-color: var(--helper-color);
+              }
+
+              &:last-child {
+                background-color: var(--accent-color);
+              }
+            }
+          }
+        }
       }
     }
   }

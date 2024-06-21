@@ -96,7 +96,9 @@
             margin-bottom: 1rem;
 
             input,
-            textarea {
+            textarea,
+            select,
+            option {
               padding: 0.5rem;
               border-radius: 0.5rem;
               border: none;
@@ -106,6 +108,11 @@
               max-width: 100%;
               min-width: 100%;
               min-height: 100px;
+            }
+
+            option,
+            select {
+              font-size: 18px;
             }
           }
         }

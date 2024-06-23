@@ -8,6 +8,24 @@ const NewPost = () => {
     () => <ArenaForm />,
     () => <PricesAndSeatsForm />,
   ];
+  const steps = [
+    {
+      id: 1,
+      title: 'Details',
+    },
+    {
+      id: 2,
+      title: 'Artist',
+    },
+    {
+      id: 3,
+      title: 'Arena',
+    },
+    {
+      id: 4,
+      title: 'Prices & Seats',
+    },
+  ];
   const titles = [
     () => (
       <h2>
@@ -31,7 +49,7 @@ const NewPost = () => {
       </h2>
     ),
   ];
-  const [formIndex, setFormIndex] = useState(3);
+  const [formIndex, setFormIndex] = useState(0);
 
   const handleNav = () => {
     console.log('handle nav');
@@ -46,22 +64,15 @@ const NewPost = () => {
         <div className={styles.wrapper}>
           <div className={styles.left}>
             <ul>
-              <li className={styles.active}>
-                <span>1</span>
-                <span>Details</span>
-              </li>
-              <li>
-                <span>2</span>
-                <span>Artist</span>
-              </li>
-              <li>
-                <span>3</span>
-                <span>Arena</span>
-              </li>
-              <li>
-                <span>4</span>
-                <span>Prices & Seats</span>
-              </li>
+              {steps.map((item) => (
+                <li
+                  key={item.id}
+                  className={formIndex + 1 === item.id && styles.active}
+                >
+                  <span>{item.id}</span>
+                  <span>{item.title}</span>
+                </li>
+              ))}
             </ul>
           </div>
           <div className={styles.right}>
@@ -114,6 +125,9 @@ const DetailsForm = () => (
     <div className={styles.formItem}>
       <label htmlFor='eventFile'>Event Images</label>
       <input type='file' id='eventFile' />
+      <span style={{ color: 'red', fontSize: 12 }}>
+        * Add two images at least
+      </span>
     </div>
     <div className={styles.eventImages}>
       <div className={styles.img}>
@@ -173,7 +187,7 @@ const ArenaForm = () => (
 );
 
 const PricesAndSeatsForm = () => (
-  <form onSubmit='' id='pricesAndSeats'>
+  <form onSubmit='' id='pricesAndSeats' className={styles.pricesAndSeats}>
     <div className={styles.formItem}>
       <label htmlFor='eventPrice'>Event Price</label>
       <input
@@ -194,6 +208,7 @@ const PricesAndSeatsForm = () => (
         max={100000}
       />
     </div>
+    <p>*Please check your inputs before creating an event!*</p>
   </form>
 );
 

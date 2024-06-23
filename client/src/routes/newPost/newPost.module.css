@@ -115,6 +115,14 @@
               font-size: 18px;
             }
           }
+
+          .pricesAndSeats {
+            p {
+              margin-top: auto;
+              font-size: 14px;
+              text-align: center;
+            }
+          }
         }
 
         .bottom {

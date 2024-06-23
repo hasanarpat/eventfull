@@ -95,7 +95,10 @@
                 height: 4rem;
 
                 span {
-                  font-size: 14px;
+                  font-size: 16px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
 
                   &:last-child {
                     font-size: 18px;

@@ -49,14 +49,15 @@ const NewPost = () => {
       </h2>
     ),
   ];
-  const [formIndex, setFormIndex] = useState(0);
+  const [formIndex, setFormIndex] = useState(3);
 
-  const handleNav = () => {
+  const handleNav = (direction) => {
     console.log('handle nav');
 
     // TODO set form index to navigate between forms
     // ! do not forget to check if form is completed before pass to next form
-    setFormIndex(0);
+    direction === 'prev' && formIndex > 0 && setFormIndex((prev) => prev - 1);
+    direction === 'next' && formIndex < 3 && setFormIndex((prev) => prev + 1);
   };
   return (
     <section className={styles.newPost}>
@@ -80,11 +81,17 @@ const NewPost = () => {
             <div className={styles.middle}>{forms[formIndex]()}</div>
             <div className={styles.bottom}>
               <div className={styles.buttons}>
-                <button className={styles.prev} onClick={handleNav}>
+                <button
+                  className={styles.prev}
+                  onClick={() => handleNav('prev')}
+                >
                   Previous
                 </button>
-                <button className={styles.next} onClick={handleNav}>
-                  Next
+                <button
+                  className={styles.next}
+                  onClick={() => handleNav('next')}
+                >
+                  {formIndex === 3 ? 'Finish' : 'Next'}
                 </button>
               </div>
             </div>

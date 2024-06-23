@@ -127,6 +127,11 @@ const DetailsForm = () => (
         <option value='music'>Music</option>
         <option value='health'>Health</option>
         <option value='business'>Business</option>
+        <option value='holiday'>Holiday</option>
+        <option value='hobbies'>Hobbies</option>
+        <option value='food&drink'>Food & Drink</option>
+        <option value='sport'>Sport & Fitness</option>
+        <option value='performing'>Performing & Visual Arts</option>
       </select>
     </div>
     <div className={styles.formItem}>

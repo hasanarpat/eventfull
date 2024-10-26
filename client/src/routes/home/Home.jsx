@@ -13,7 +13,7 @@ const Home = () => {
     const formData = new FormData(e.target);
 
     const location = formData.get('location');
-    navigate(`/search?location=${location}`)
+    navigate(`/search?location=${location.trim().replace(/\s/g, '')}`)
   };
   return (
     <section className={styles.home}>

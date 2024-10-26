@@ -195,7 +195,7 @@ const Home = () => {
           </div>
           <section className={styles.rising}>
             <Link
-              to='/events/blabla'
+              to='/event/blabla'
               className={styles.risingItem}
               style={{
                 backgroundImage:
@@ -219,7 +219,7 @@ const Home = () => {
               </div>
             </Link>
             <Link
-              to='/events/blabla'
+              to='/event/blabla'
               className={styles.risingItem}
               style={{
                 backgroundImage:
@@ -243,7 +243,7 @@ const Home = () => {
               </div>
             </Link>
             <Link
-              to='/events/blabla'
+              to='/event/blabla'
               className={styles.risingItem}
               style={{
                 backgroundImage:

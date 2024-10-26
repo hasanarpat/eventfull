@@ -62,6 +62,7 @@ const Search = ({ type }) => {
     <div
       className={styles.searchBar}
       onFocus={() => setShowSuggestions(true)}
+      onBlur={()=>setShowSuggestions(false)}
       // onBlur={() => setShowSuggestions(false)}
     >
       <div className={styles.searchBarLayout}>

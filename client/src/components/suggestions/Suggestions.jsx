@@ -5,7 +5,7 @@ const Suggestions = ({ showSuggestions, setShowSuggestions }) => {
   return (
     <article
       className={styles.suggestions}
-      onMouseLeave={() => setShowSuggestions(false)}
+      // onMouseLeave={() => setShowSuggestions(false)}
       style={showSuggestions ? { display: 'block' } : { display: 'none' }}
     >
       <div className={styles.suggestion}>

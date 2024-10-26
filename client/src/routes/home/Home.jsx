@@ -3,17 +3,17 @@ import Banner from '../../components/banner/Banner';
 import Map from '../../components/map/Map';
 import Search from '../../components/search/Search';
 import styles from './home.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { mapItems } from '../../data/mock-map';
 
 const Home = () => {
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
 
     const location = formData.get('location');
-
-    console.log(location);
+    navigate(`/search?location=${location}`)
   };
   return (
     <section className={styles.home}>
